@@ -11,16 +11,38 @@ this script and the workflow that runs it don't need to change.
 import json
 import pathlib
 import sys
+import time
+import urllib.error
 import urllib.request
 
-USER_AGENT = "Mozilla/5.0 (compatible; HoneymoonPlanningSite/1.0; personal-use)"
+# Wikimedia (and most hosts) rate-limit or outright block requests that spoof
+# a browser User-Agent - see https://meta.wikimedia.org/wiki/User-Agent_policy.
+# Identify ourselves honestly instead, with a URL a human could follow up at.
+USER_AGENT = (
+    "HoneymoonPlanningSite/1.0 "
+    "(+https://github.com/cameronpcook/honeymoon-planning) "
+    "Python-urllib/3"
+)
 TIMEOUT_SECONDS = 30
+REQUEST_DELAY_SECONDS = 1.0
+RETRY_DELAYS_SECONDS = [5, 15, 30]  # backoff on 429s specifically
 
 
 def fetch(url: str) -> bytes:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
-        return response.read()
+    last_error = None
+    for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
+        if delay:
+            print(f"    rate-limited, waiting {delay}s before retry {attempt} ...")
+            time.sleep(delay)
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
+                return response.read()
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code != 429:
+                raise
+    raise last_error
 
 
 def main() -> int:
@@ -44,6 +66,7 @@ def main() -> int:
             except Exception as exc:  # noqa: BLE001 - report and keep going
                 print(f"  FAILED {filename}: {exc}", file=sys.stderr)
                 failed.append(f"{dest_dir.name}/{filename}")
+            time.sleep(REQUEST_DELAY_SECONDS)
 
     if failed:
         print("\nFailed downloads: " + ", ".join(failed), file=sys.stderr)
