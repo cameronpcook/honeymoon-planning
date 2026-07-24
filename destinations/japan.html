@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tokyo + Kyoto — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; TYO &middot; Japan</span>
         <h1>🇯🇵 Tokyo + Kyoto</h1>
-        <p class="vibe-line">A study in contrast — Tokyo is neon, food-obsessed, and energetic; Kyoto is temples, gardens, and quiet. Excellent for couples who want both stimulation and stillness in one trip.</p>
+        <p class="vibe-line">A study in contrast — Tokyo is neon, food-obsessed, and energetic; Kyoto is temples, gardens, and quiet. Excellent for couples who want both stimulation and stillness in one trip. 8 days on the ground, about 9 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/japan/tokyo-shinjuku-skyline.jpg" alt="Shinjuku skyline, Tokyo, at dusk" loading="lazy">
+            <figcaption>Shinjuku skyline, Tokyo</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/japan/arashiyama-bamboo-grove.jpg" alt="Bamboo grove path in Arashiyama, Kyoto" loading="lazy">
+            <figcaption>Arashiyama bamboo grove, Kyoto</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">TYO</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">LATE SEP–OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="4 out of 5 - Tight but doable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,22 +76,39 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Shoulder: late September–October (comfortable temps, early autumn color starting in Kyoto by late October). Peak: late July–August (hot, humid, Obon holiday crowds in August).</p>
+        <p class="season-line"><strong>Shoulder:</strong> late September–October (comfortable temps, early autumn color starting in Kyoto by late October).</p>
+        <p class="season-line"><strong>Peak:</strong> late July–August (hot, humid, Obon holiday crowds in August).</p>
+        <p class="wx-note" style="margin-top:8px;">Alaska's Seattle–Tokyo route (operated by Hawaiian Airlines) flies daily year-round, so there's no flight-driven constraint on this window — pick dates for weather and crowds alone.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>Japan's food scene is excellent at every price point, which helps offset the ryokan splurge.</p>
+        <div class="dollars" aria-label="4 out of 5 - Tight but doable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span></div>
+        <p>A boutique base in Tokyo (TRUNK Hotel Shibuya, ~$350/night) plus one ryokan-style night at Suiran and three nights at the Ritz-Carlton in Kyoto runs lodging to roughly $5,250; add food and transit and the total lands right around $7,000 — tight but doable. Swapping the Ritz nights for another moderate hotel brings it back to comfortably under.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">Nonstop</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → NRT</div>
+          <div class="flight-time">1:30p – 4:00p<sup>+1</sup></div>
+          <span class="dur">10h 30m · HA823, operated by Hawaiian Airlines</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">NRT → SEA</div>
+          <div class="flight-time">6:25p – 11:30a</div>
+          <span class="dur">9h 05m · HA824, operated by Hawaiian Airlines</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Tokyo (Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">72°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">61°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Tokyo (Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">72°F (22°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">61°F (16°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">~65%</span></div>
-<div class="wx-row"><span class="k">Dew point</span><span class="v mono">~55°F</span></div><p class="wx-note">Comfortable, noticeably drier than summer.</p></div>
-<div class="wx-card"><h4>Kyoto (Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">69°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">54°F</span></div>
+<div class="wx-row"><span class="k">Dew point</span><span class="v mono">~55°F (estimated)</span></div><p class="wx-note">Comfortable, noticeably drier than summer.</p></div>
+<div class="wx-card"><h4>Kyoto (Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">69°F (21°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">54°F (12°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">60s–70s%</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">~50–55°F (estimated)</span></div><p class="wx-note">A few degrees cooler than Tokyo, similar comfort level.</p></div></div>
 
@@ -95,15 +119,39 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Shibuya/Shinjuku</h4><p>Shibuya Crossing, Shinjuku Gyoen park, izakaya dinner.</p></div>
+              <div class="content"><h4>Shibuya/Shinjuku</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/shibuya-crossing.jpg" alt="Shibuya Crossing, Tokyo" loading="lazy">
+                  <figcaption>Shibuya Crossing</figcaption>
+                </figure>
+              </div>
+              <p>Shibuya Crossing, Shinjuku Gyoen park, izakaya dinner.</p>
+              <a class="learnmore" href="https://fng.or.jp/shinjuku/en/" target="_blank" rel="noopener">Official site: Shinjuku Gyoen ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Food + art</h4><p>Tsukiji Outer Market breakfast, teamLab digital art museum, sushi omakase dinner.</p></div>
+              <div class="content"><h4>Food + art</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/tsukiji-outer-market.jpg" alt="Tsukiji Outer Market, Tokyo" loading="lazy">
+                  <figcaption>Tsukiji Outer Market</figcaption>
+                </figure>
+              </div>
+              <p>Tsukiji Outer Market breakfast, teamLab Borderless digital art museum, sushi omakase dinner.</p>
+              <a class="learnmore" href="https://www.teamlab.art/e/borderless-azabudai/" target="_blank" rel="noopener">Official tickets: teamLab Borderless ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Hakone day trip (optional)</h4><p>Onsen, Mt. Fuji views, Hakone Open-Air Museum — or a slower Tokyo day instead.</p></div>
+              <div class="content"><h4>Hakone day trip (optional)</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/hakone-lake-ashi-fuji.jpg" alt="Mount Fuji seen from Lake Ashi, Hakone" loading="lazy">
+                  <figcaption>Lake Ashi, Hakone</figcaption>
+                </figure>
+              </div>
+              <p>Onsen, Mt. Fuji views, Hakone Open-Air Museum — or a slower Tokyo day instead.</p>
+              <a class="learnmore" href="https://www.hakone-oam.or.jp/en/" target="_blank" rel="noopener">Official site: Hakone Open-Air Museum ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
@@ -111,11 +159,32 @@
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Kyoto temples</h4><p>Fushimi Inari's torii gates, Kiyomizu-dera, Gion district in the evening.</p></div>
+              <div class="content"><h4>Kyoto temples</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/fushimi-inari-torii.jpg" alt="Torii gates at Fushimi Inari Taisha, Kyoto" loading="lazy">
+                  <figcaption>Fushimi Inari torii gates</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/kiyomizu-dera.jpg" alt="Kiyomizu-dera temple, Kyoto" loading="lazy">
+                  <figcaption>Kiyomizu-dera</figcaption>
+                </figure>
+              </div>
+              <p>Fushimi Inari's torii gates, Kiyomizu-dera, Gion district in the evening.</p>
+              <a class="learnmore" href="http://inari.jp/en/" target="_blank" rel="noopener">Official site: Fushimi Inari Taisha ↗</a>
+              <a class="learnmore" href="https://www.kiyomizudera.or.jp/en/" target="_blank" rel="noopener">Official site: Kiyomizu-dera ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">07</div>
-              <div class="content"><h4>Arashiyama + free time</h4><p>Bamboo grove, Tenryu-ji temple garden, wander at your own pace.</p></div>
+              <div class="content"><h4>Arashiyama + free time</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/arashiyama-bamboo-grove.jpg" alt="Bamboo grove path in Arashiyama, Kyoto" loading="lazy">
+                  <figcaption>Arashiyama bamboo grove</figcaption>
+                </figure>
+              </div>
+              <p>Bamboo grove, Tenryu-ji temple garden, wander at your own pace.</p>
+              <a class="learnmore" href="https://www.tenryuji.com/en/" target="_blank" rel="noopener">Official site: Tenryu-ji ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">08</div>
@@ -124,26 +193,164 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Park Hyatt Tokyo or boutique in Shibuya/Ginza</div>
-              <span class="price mono">$400–700/night</span>
-              <p>Central, excellent service.</p>
+              <div class="name">TRUNK(HOTEL) Shibuya</div>
+              <span class="price mono">$300–450/night</span>
+              <p>Small, design-forward boutique near Harajuku/Omotesando — no formal star classification, but a well-reviewed pick for a livelier Shibuya base.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/shibuya-crossing.jpg" alt="Shibuya, Tokyo, representative view" loading="lazy">
+                  <figcaption>Shibuya (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://trunk-hotel.com/en/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g1066456-d12389531-Reviews-Trunk_Hotel-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Ryokan with private onsen, Kyoto (at least 1 night)</div>
-              <span class="price mono">$500–1,000/night</span>
-              <p>Traditional kaiseki dinner included.</p>
+              <div class="name">Park Hyatt Tokyo</div>
+              <span class="price mono">$850–1,300+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>The Lost in Translation hotel — top floors of Shinjuku Park Tower, sweeping city views.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/park-hyatt-tokyo.jpg" alt="Park Hyatt Tokyo" loading="lazy">
+                  <figcaption>Park Hyatt Tokyo</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.hyatt.com/park-hyatt/en-US/tyoph-park-hyatt-tokyo" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g14133673-d307368-Reviews-Park_Hyatt_Tokyo-Nishishinjuku_Shinjuku_Tokyo_Tokyo_Prefecture_Kanto.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Ritz-Carlton Kyoto</div>
-              <span class="price mono">$700+/night</span>
-              <p>Alternative for the rest of the Kyoto stay.</p>
+              <div class="name">Suiran, a Luxury Collection Hotel</div>
+              <span class="price mono">$700–1,200+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Riverside in Arashiyama, hybrid Western-luxury/ryokan experience, private onsen in select rooms.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/arashiyama-bamboo-grove.jpg" alt="Arashiyama, Kyoto, representative view" loading="lazy">
+                  <figcaption>Arashiyama (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.marriott.com/en-us/hotels/ukylc-suiran-a-luxury-collection-hotel-kyoto/overview/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g298564-d7767288-Reviews-Suiran_a_Luxury_Collection_Hotel_Kyoto-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
+            </div>
+<div class="lodge-card">
+              <div class="name">The Ritz-Carlton, Kyoto</div>
+              <span class="price mono">$900–1,450+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Central, on the Kamo River, largest rooms in Kyoto, Higashiyama mountain views.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/japan/kamo-river-kyoto.jpg" alt="Kamo River, Kyoto" loading="lazy">
+                  <figcaption>Kamo River, Kyoto</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.ritzcarlton.com/en/hotels/ukyrz-the-ritz-carlton-kyoto/overview/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g298564-d5977426-Reviews-The_Ritz_Carlton_Kyoto-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="iceland.html"><span class="lbl">&larr; Previous</span>🇮🇸 Reykjavik</a>
       <a href="seoul.html"><span class="lbl">Next &rarr;</span>🇰🇷 Seoul</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'TRUNK(HOTEL) Shibuya', lat: 35.6684, lng: 139.7027, url: 'https://trunk-hotel.com/en/' },
+        { cat: 'hotel', name: 'Park Hyatt Tokyo', lat: 35.6857, lng: 139.6900, url: 'https://www.hyatt.com/park-hyatt/en-US/tyoph-park-hyatt-tokyo' },
+        { cat: 'hotel', name: 'Suiran, a Luxury Collection Hotel', lat: 35.0128, lng: 135.6776, url: 'https://www.marriott.com/en-us/hotels/ukylc-suiran-a-luxury-collection-hotel-kyoto/overview/' },
+        { cat: 'hotel', name: 'The Ritz-Carlton, Kyoto', lat: 35.0107, lng: 135.7702, url: 'https://www.ritzcarlton.com/en/hotels/ukyrz-the-ritz-carlton-kyoto/overview/' },
+        { cat: 'activity', name: 'Shibuya Crossing', lat: 35.6595, lng: 139.7005, url: 'https://www.tokyo-park.or.jp/' },
+        { cat: 'activity', name: 'Shinjuku Gyoen', lat: 35.6852, lng: 139.7100, url: 'https://fng.or.jp/shinjuku/en/' },
+        { cat: 'activity', name: 'Tsukiji Outer Market', lat: 35.6654, lng: 139.7707, url: 'https://www.tsukiji.or.jp/' },
+        { cat: 'activity', name: 'teamLab Borderless', lat: 35.6627, lng: 139.7429, url: 'https://www.teamlab.art/e/borderless-azabudai/' },
+        { cat: 'activity', name: 'Hakone Open-Air Museum', lat: 35.2394, lng: 139.0533, url: 'https://www.hakone-oam.or.jp/en/' },
+        { cat: 'activity', name: 'Fushimi Inari Taisha', lat: 34.9671, lng: 135.7727, url: 'http://inari.jp/en/' },
+        { cat: 'activity', name: 'Kiyomizu-dera', lat: 34.9949, lng: 135.7850, url: 'https://www.kiyomizudera.or.jp/en/' },
+        { cat: 'activity', name: 'Tenryu-ji / Arashiyama Bamboo Grove', lat: 35.0159, lng: 135.6742, url: 'https://www.tenryuji.com/en/' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
