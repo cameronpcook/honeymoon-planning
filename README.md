@@ -1,0 +1,18 @@
+# Honeymoon Dossier
+
+A static site with all 13 destination options, built for GitHub Pages. No build step, no dependencies — just HTML/CSS files.
+
+## Deploy to GitHub Pages (about 5 minutes)
+
+1. Create a new repository on GitHub (public repos get free Pages hosting; private repos need a paid plan for Pages).
+2. Upload everything in this folder to the repo — `index.html`, `styles.css`, `.nojekyll`, and the `destinations/` folder — keeping the same structure. Easiest way: on the repo's GitHub page, click **Add file → Upload files**, drag in all of it, and commit.
+3. Go to **Settings → Pages** in the repo.
+4. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+5. Under **Branch**, choose `main` and `/ (root)`, then **Save**.
+6. GitHub will give you a URL like `https://yourusername.github.io/repo-name/` within a minute or two — that's the link to share.
+
+## Editing later
+
+- All destination content lives in `build.py` as plain Python data (not included in this export — ask me to regenerate if you want an edit, or just hand-edit the HTML files directly, they're plain and unminified).
+- `styles.css` controls the whole look — one file, easy to tweak colors/fonts.
+- Each destination page is fully self-contained in `destinations/<slug>.html`.
