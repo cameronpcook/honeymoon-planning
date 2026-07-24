@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cabo San Lucas — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; SJD &middot; Mexico</span>
         <h1>🌵 Cabo San Lucas</h1>
-        <p class="vibe-line">Desert-meets-ocean glamour — dramatic cliffs, upscale resorts, marina nightlife, easy day trips to quieter beach towns. Feels more like a polished resort escape than an immersive cultural trip.</p>
+        <p class="vibe-line">Desert-meets-ocean glamour — dramatic cliffs, upscale resorts, marina nightlife, easy day trips to quieter beach towns. Feels more like a polished resort escape than an immersive cultural trip. 7 days on the ground, about 8 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/cabo/el-arco.jpg" alt="El Arco, Cabo San Lucas" loading="lazy">
+            <figcaption>El Arco, Land's End</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/cabo/cabo-san-lucas-bay.jpg" alt="Cabo San Lucas bay" loading="lazy">
+            <figcaption>Cabo San Lucas bay</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">SJD</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">LATE OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="2 out of 5 - Budget-Friendly"><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,18 +76,35 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Your July–October window overlaps both sides: July–September is technically Baja's hurricane season (low but non-zero risk, hot and humid); October shifts into a much drier, more comfortable, lower-risk stretch. Push this one toward mid-to-late October specifically — September is the height of hurricane season and the most humid month, and the risk drops drastically by late October.</p>
+        <p class="season-line"><strong>Shoulder:</strong> mid-to-late October (drier, lower hurricane risk, much more comfortable).</p>
+        <p class="season-line"><strong>Peak/riskier:</strong> July–September, technically Baja's hurricane season — low but non-zero risk, and September is the most humid month.</p>
+        <p class="wx-note" style="margin-top:8px;">Push this one toward late October specifically — the risk and humidity both drop noticeably by then.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>Cabo resorts are pricier than mainland Mexico but this budget covers a strong splurge property plus activities.</p>
+        <div class="dollars" aria-label="2 out of 5 - Budget-Friendly"><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>Both marquee properties here have gotten noticeably pricier than a quick glance suggests — Waldorf Astoria Pedregal and One&amp;Only Palmilla now both run $1,500+/night, which alone blows past $7,500 for a week. A well-reviewed all-inclusive like Hyatt Ziva (~$600/night, meals and drinks bundled in) keeps a full week plus excursions to around $5,000.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">Nonstop</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → SJD</div>
+          <div class="flight-time">7:35a – 12:00p</div>
+          <span class="dur">4h 25m · Alaska Airlines · daily</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">SJD → SEA</div>
+          <div class="flight-time">1:00p – 3:35p</div>
+          <span class="dur">4h 35m · Alaska Airlines · daily</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Cabo San Lucas (Oct — recommended timing)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">88–91°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">69–78°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Cabo San Lucas (Oct — recommended timing)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">88–91°F (31–33°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">69–78°F (21–26°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">~76%, notably lower than Jul–Sept</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">mid-60s–low-70s°F (estimated)</span></div>
 <div class="wx-row"><span class="k">Sea temp</span><span class="v mono">~84°F, annual peak</span></div><p class="wx-note">Warm and humid but far less oppressive than peak summer.</p></div></div>
@@ -88,11 +112,19 @@
     <div class="section-title">Itinerary</div>
     <div class="day">
               <div class="num mono">01</div>
-              <div class="content"><h4>Arrive</h4><p>Short flight (~3hrs), settle into your resort.</p></div>
+              <div class="content"><h4>Arrive</h4><p>Short flight (~4.5hrs), settle into your resort.</p></div>
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>El Arco boat tour + Lover&#x27;s Beach</h4><p>Iconic rock arch, snorkeling.</p></div>
+              <div class="content"><h4>El Arco boat tour + Lover's Beach</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/cabo/el-arco.jpg" alt="El Arco, Cabo San Lucas" loading="lazy">
+                  <figcaption>El Arco</figcaption>
+                </figure>
+              </div>
+              <p>Iconic rock arch, snorkeling.</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/AttractionProductReview-g152515-d26337085-Lovers_Beach_and_El_Arco_Boat_Trip-Cabo_San_Lucas_Los_Cabos_Baja_California.html" target="_blank" rel="noopener">Recommended: Kelly Boat Club, El Arco + Lover's Beach ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
@@ -100,7 +132,14 @@
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Todos Santos day trip</h4><p>Bohemian art town, an hour from Cabo, a nice change of pace from resort life.</p></div>
+              <div class="content"><h4>Todos Santos day trip</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/cabo/todos-santos.jpg" alt="Hotel California building, Todos Santos" loading="lazy">
+                  <figcaption>Todos Santos</figcaption>
+                </figure>
+              </div>
+              <p>Bohemian art town, an hour from Cabo, a nice change of pace from resort life.</p></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
@@ -121,21 +160,144 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
+              <div class="name">Hyatt Ziva Los Cabos</div>
+              <span class="price mono">$550–700/night</span>
+              <span class="stars">★★★★★ <small>5-star, all-inclusive</small></span>
+              <p>Meals and drinks bundled into the rate — the value pick that keeps this destination affordable.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/cabo/cabo-san-lucas-bay.jpg" alt="Cabo San Lucas bay, representative view" loading="lazy">
+                  <figcaption>Los Cabos coast (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-los-cabos/sjdif" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g152516-d469312-Reviews-Hyatt_Ziva_Los_Cabos-San_Jose_del_Cabo_Los_Cabos_Baja_California.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
+            </div>
+<div class="lodge-card">
               <div class="name">Waldorf Astoria Los Cabos Pedregal</div>
-              <span class="price mono">$700–1,400/night</span>
-              <p>Splurge, cliffside.</p>
+              <span class="price mono">$1,500–2,500+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Cliffside, tunnel-access private cove. Recently rebranded from The Resort at Pedregal — rates jumped accordingly.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/cabo/el-arco.jpg" alt="Cabo coastline, representative view" loading="lazy">
+                  <figcaption>Cabo coastline (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.waldorfastorialoscabospedregal.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g152515-d1200756-Reviews-Waldorf_Astoria_Los_Cabos_Pedregal-Cabo_San_Lucas_Los_Cabos_Baja_California.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
               <div class="name">One&amp;Only Palmilla</div>
-              <span class="price mono">$700–1,400/night</span>
-              <p>Alternative, similar tier.</p>
+              <span class="price mono">$1,000–2,500+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>San José del Cabo side, original Los Cabos ultra-luxury property.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/cabo/cabo-san-lucas-bay.jpg" alt="Los Cabos coast, representative view" loading="lazy">
+                  <figcaption>Los Cabos coast (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.oneandonlyresorts.com/palmilla" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g152516-d185357-Reviews-One_Only_Palmilla-San_Jose_del_Cabo_Los_Cabos_Baja_California.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="bali.html"><span class="lbl">&larr; Previous</span>🌋 Ubud + Uluwatu</a>
       <a href="puertovallarta.html"><span class="lbl">Next &rarr;</span>🌊 Puerto Vallarta</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Hyatt Ziva Los Cabos', lat: 22.9313, lng: -109.7754, url: 'https://www.hyatt.com/en-US/hotel/mexico/hyatt-ziva-los-cabos/sjdif' },
+        { cat: 'hotel', name: 'Waldorf Astoria Los Cabos Pedregal', lat: 22.8797, lng: -109.9294, url: 'https://www.waldorfastorialoscabospedregal.com/' },
+        { cat: 'hotel', name: 'One&Only Palmilla', lat: 23.0186, lng: -109.7053, url: 'https://www.oneandonlyresorts.com/palmilla' },
+        { cat: 'activity', name: 'El Arco / Land\'s End', lat: 22.8688, lng: -109.9058, url: 'https://www.tripadvisor.com/AttractionProductReview-g152515-d26337085-Lovers_Beach_and_El_Arco_Boat_Trip-Cabo_San_Lucas_Los_Cabos_Baja_California.html' },
+        { cat: 'activity', name: 'Todos Santos', lat: 23.4479, lng: -110.2242, url: 'https://en.wikipedia.org/wiki/Todos_Santos,_Baja_California_Sur' },
+        { cat: 'activity', name: 'Chileno Bay', lat: 22.9450, lng: -109.8250, url: 'https://en.wikipedia.org/wiki/Los_Cabos_Municipality' },
+        { cat: 'activity', name: 'Santa Maria Bay', lat: 22.9385, lng: -109.7908, url: 'https://en.wikipedia.org/wiki/Los_Cabos_Municipality' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
