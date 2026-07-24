@@ -26,8 +26,9 @@ Fetching is automatic — no terminal needed. Each destination has an
 `images/<destination>/manifest.json` mapping local filename → source URL
 (currently just `images/italy/manifest.json`). The
 **Fetch destination images** GitHub Action (`.github/workflows/fetch-images.yml`)
-reads every manifest, downloads anything missing or changed, and commits the
-result straight to the branch:
+reads every manifest, downloads each image, resizes it to a max of 1600px and
+re-compresses it as an optimized progressive JPEG (`scripts/fetch_images.py`,
+stripping EXIF data too), and commits the result straight to the branch:
 
 - It runs automatically whenever a manifest (or the fetch script) changes and
   gets pushed.
