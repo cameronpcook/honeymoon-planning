@@ -20,7 +20,7 @@
   --adventure:#C9A25C;
   --culture:#9E6B4E;
   --radius:7px;
-  --maxw:920px;
+  --maxw:1140px;
 }
 
 *{box-sizing:border-box;}
@@ -162,7 +162,7 @@ footer .dedication .heart{color:var(--brass-dark); font-style:normal;}
 .pass-main{padding:30px 30px 26px; min-width:0;}
 .pass-main .eyebrow{margin-bottom:10px;}
 .pass-main h1{font-size:clamp(1.9rem,4.5vw,2.6rem); line-height:1.06;}
-.pass-main .vibe-line{color:var(--ink-soft); margin-top:14px; font-size:1.02rem; max-width:60ch;}
+.pass-main .vibe-line{color:var(--ink-soft); margin-top:14px; font-size:1.02rem; max-width:75ch;}
 .pass-stub{
   border-left:2px dashed var(--line);
   background:var(--paper-alt);
@@ -175,24 +175,25 @@ footer .dedication .heart{color:var(--brass-dark); font-style:normal;}
 }
 .pass-stub::before{top:-9px;}
 .pass-stub::after{bottom:-9px;}
-.pass-stub .code-big{font-family:'IBM Plex Mono', monospace; font-size:1.9rem; font-weight:600; color:var(--brass-dark); letter-spacing:0.02em;}
 .pass-stub .field{font-family:'IBM Plex Mono', monospace; font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;}
 .pass-stub .val{font-size:0.85rem; color:var(--ink); margin-top:2px;}
 
-.flight-info{margin-top:8px; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ink-soft); line-height:1.5;}
-.flight-info .flight-badge{
+/* ---------- flight info tile ---------- */
+.flight-status{margin:12px 0;}
+.flight-status .flight-badge{
   display:inline-block; background:var(--paper); border:1px solid var(--brass); border-radius:999px;
-  padding:2px 8px; font-size:0.66rem; color:var(--brass-dark); margin-right:6px;
+  padding:4px 12px; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--brass-dark);
 }
-.flight-info .flight-miles{font-size:0.66rem; color:var(--sage);}
-.flight-info .flight-leg{margin-top:6px;}
-.flight-info .flight-leg b{color:var(--ink); font-weight:600;}
-.flight-info .flight-leg .dur{color:var(--muted);}
+.flight-status .flight-miles{font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--sage);}
+.flight-leg{margin-top:16px; padding-top:14px; border-top:1px dashed var(--line);}
+.flight-leg:first-of-type{margin-top:18px;}
+.flight-leg .flight-route{font-family:'Fraunces', serif; font-weight:600; font-size:1rem; color:var(--ink); margin-bottom:5px;}
+.flight-leg .flight-time{font-family:'IBM Plex Mono', monospace; font-size:0.88rem; color:var(--ink-soft);}
+.flight-leg .dur{display:block; margin-top:3px; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--muted);}
 
 .dollars{font-family:'IBM Plex Mono', monospace; font-size:1.15rem; letter-spacing:1px;}
 .dollars .filled{color:var(--brass-dark);}
-.dollars .empty{color:var(--line);}
-.dollars-label{display:block; font-family:'Source Serif 4', serif; font-size:0.85rem; letter-spacing:0; color:var(--ink-soft); margin-top:4px;}
+.dollars .empty{color:var(--ink); opacity:0.2;}
 .pass-stub .dollars{font-size:1rem; margin-top:2px;}
 
 @media (max-width:640px){
@@ -201,7 +202,7 @@ footer .dedication .heart{color:var(--brass-dark); font-style:normal;}
 }
 
 /* ---------- stat tiles ---------- */
-.tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:40px;}
+.tiles{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-bottom:40px;}
 @media (max-width:700px){.tiles{grid-template-columns:1fr;}}
 .tile{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;}
 .tile .field{font-family:'IBM Plex Mono', monospace; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); margin-bottom:8px;}
@@ -241,20 +242,20 @@ footer .dedication .heart{color:var(--brass-dark); font-style:normal;}
 }
 .hero-photos::-webkit-scrollbar{height:6px;}
 .hero-photos::-webkit-scrollbar-thumb{background:var(--line); border-radius:4px;}
-.hero-photos figure{margin:0; flex:0 0 220px; scroll-snap-align:start;}
+.hero-photos figure{margin:0; flex:1 1 220px; min-width:220px; max-width:400px; scroll-snap-align:start;}
 .hero-photos img{
-  width:220px; height:150px; object-fit:cover; border-radius:var(--radius);
+  width:100%; height:220px; object-fit:cover; border-radius:var(--radius);
   border:1px solid var(--line); display:block; cursor:zoom-in;
 }
 .hero-photos figcaption{font-size:0.72rem; color:var(--muted); font-style:italic; margin-top:5px;}
-@media (max-width:640px){.hero-photos figure{flex-basis:190px;} .hero-photos img{width:190px; height:130px;}}
+@media (max-width:640px){.hero-photos figure{flex-basis:190px; min-width:190px;} .hero-photos img{height:170px;}}
 
 /* ---------- itinerary ---------- */
 .day{display:grid; grid-template-columns:56px 1fr; gap:16px; padding:16px 0; border-top:1px solid var(--line);}
 .day:first-of-type{border-top:none;}
 .day .num{font-family:'IBM Plex Mono', monospace; font-size:1.3rem; color:var(--line); font-weight:600; line-height:1.3;}
 .day .content{overflow:hidden;} /* containing block for the floated day-photos */
-.day .content h4{font-family:'Fraunces', serif; font-size:1.05rem; font-weight:600; margin-bottom:4px;}
+.day .content h4{font-family:'Fraunces', serif; font-size:1.05rem; font-weight:600; line-height:1.3; margin:0 0 4px;}
 .day .content p{margin:0; color:var(--ink-soft); font-size:0.95rem;}
 
 .day-photos{float:right; margin:0 0 8px 16px; display:flex; flex-direction:column; gap:8px; width:140px;}
