@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bora Bora — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; BOB &middot; French Polynesia</span>
         <h1>🏝️ Bora Bora</h1>
-        <p class="vibe-line">The most iconic overwater-bungalow destination on Earth — Mount Otemanu backdrop, turquoise lagoon, extremely quiet and private. The purest “do nothing, look at water” honeymoon on this list.</p>
+        <p class="vibe-line">The most iconic overwater-bungalow destination on Earth — Mount Otemanu backdrop, turquoise lagoon, extremely quiet and private. The purest "do nothing, look at water" honeymoon on this list. About 6 nights on Bora Bora itself, closer to 9–10 door-to-door once you count the Papeete connections each way.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/borabora/bora-bora-otemanu.jpg" alt="Mount Otemanu, Bora Bora" loading="lazy">
+            <figcaption>Mount Otemanu, Bora Bora</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/borabora/bora-bora-aerial.jpg" alt="Aerial view of Bora Bora's lagoon" loading="lazy">
+            <figcaption>Bora Bora from the air</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">BOB</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">SEP–OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Over budget at 7 nights</div>
+          <div class="dollars" aria-label="5 out of 5 - Budget buster"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span></div>
         </div>
       </div>
     </div>
@@ -69,32 +76,62 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Same pattern as Moorea/Tahiti — shoulder September–October, peak July–August.</p>
+        <p class="season-line"><strong>Shoulder:</strong> September–October (same dry-season pattern as Moorea/Tahiti).</p>
+        <p class="season-line"><strong>Peak:</strong> July–August (same island chain, same crowd/price pattern).</p>
+        <p class="wx-note" style="margin-top:8px;">Bora Bora has no international airport of its own — every routing goes through Papeete first, so the season logic is identical to the Tahiti page.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Over budget at 7 nights</div>
-        <p>Even 5–6 nights at these properties can exceed $7,500 on lodging alone before food (also expensive, since almost everything is imported). If Bora Bora is the dream, consider extending the budget or planning 4–5 nights instead of 7.</p>
+        <div class="dollars" aria-label="5 out of 5 - Budget buster"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span></div>
+        <p>Even the most affordable overwater option on the island (InterContinental Le Moana, ~$800/night) runs lodging alone to about $4,800 for 6 nights; add food, excursions, and a Papeete hotel night each way and the total clears $7,500 — before you've booked a single night at the St. Regis or Four Seasons, where lodging alone runs $6,000–$13,000+. The most expensive destination on this list by a wide margin.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">2 stops (LAX, PPT)</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles (Air Tahiti Nui codeshare) + separate Air Tahiti domestic ticket</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → LAX → PPT</div>
+          <div class="flight-time">11:00a – 1:35p / 4:20p – 10:35p</div>
+          <span class="dur">2h 35m (Alaska) + 8h 15m (TN7, Air Tahiti Nui)</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">PPT → BOB <small>(next morning)</small></div>
+          <div class="flight-time">8:00a – 8:50a</div>
+          <span class="dur">~50m · Air Tahiti (domestic) · 8x daily. TN7 lands too late for a same-night connection, so plan on one night near the Papeete airport each way.</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">BOB → PPT → LAX → SEA</div>
+          <div class="flight-time">3:00p – 3:50p, then 11:45p – 10:35a<sup>+1</sup> / 1:15p – 3:50p</div>
+          <span class="dur">~50m (Air Tahiti) + 7h 50m (TN8) + 2h 35m (Alaska), with a day in Papeete before the overnight flight</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Bora Bora (Sept–Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">~85°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">~71°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Bora Bora (Sept–Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">85°F (29°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">71°F (22°C)</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">low-to-mid 70s°F (estimated)</span></div><p class="wx-note">Same tropical profile as Moorea/Tahiti — it's the same island chain.</p></div></div>
 
     <div class="section-title">Itinerary</div>
     <div class="day">
               <div class="num mono">01</div>
-              <div class="content"><h4>Arrive</h4><p>Fly Papeete to Bora Bora (~50 min), boat transfer to your resort.</p></div>
+              <div class="content"><h4>Arrive</h4><p>Land in Papeete late (10:35p), overnight near the airport, fly to Bora Bora (~50 min) the next morning, boat transfer to your resort.</p></div>
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Lagoon day</h4><p>Snorkeling straight from your bungalow deck.</p></div>
+              <div class="content"><h4>Lagoon day</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/borabora/bora-bora-lagoon.jpg" alt="Bora Bora lagoon" loading="lazy">
+                  <figcaption>Bora Bora lagoon</figcaption>
+                </figure>
+              </div>
+              <p>Snorkeling straight from your bungalow deck.</p></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Shark and ray excursion</h4><p>Guided, shallow-water snorkel with blacktip reef sharks and stingrays.</p></div>
+              <div class="content"><h4>Shark and ray excursion</h4><p>Guided, shallow-water snorkel with blacktip reef sharks and stingrays.</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/Attraction_Review-g311415-d3454219-Reviews-Shark_Boy_Bora_Bora-Bora_Bora_Society_Islands.html" target="_blank" rel="noopener">Recommended: Shark Boy Bora Bora ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
@@ -110,31 +147,147 @@
             </div>
 <div class="day">
               <div class="num mono">07</div>
-              <div class="content"><h4>Depart</h4><p>Fly home.</p></div>
+              <div class="content"><h4>Depart</h4><p>Fly Bora Bora to Papeete, spend the day, overnight flight home via LAX.</p></div>
             </div>
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">InterContinental Bora Bora</div>
-              <span class="price mono">$900–1,800/night</span>
-              <p>Overwater bungalow.</p>
+              <div class="name">InterContinental Bora Bora Le Moana Resort</div>
+              <span class="price mono">$750–1,000/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>On Matira Point, main-island location (no boat-only motu dependency) — the relatively affordable way into an overwater bungalow here.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/borabora/bora-bora-lagoon.jpg" alt="Bora Bora lagoon, representative view" loading="lazy">
+                  <figcaption>Bora Bora lagoon (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://lemoana.intercontinental.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g669130-d307154-Reviews-InterContinental_Bora_Bora_Le_Moana_Resort_by_IHG-Vaitape_Bora_Bora_Society_Islands.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">St. Regis Bora Bora</div>
-              <span class="price mono">$900–1,800/night</span>
-              <p>Overwater bungalow, top-tier.</p>
+              <div class="name">Four Seasons Resort Bora Bora</div>
+              <span class="price mono">$900–1,800+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Private motu (Motu Tehotu), plunge-pool suites available at the top end, rates include daily breakfast and round-trip transfers.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/borabora/four-seasons-bora-bora.jpg" alt="Four Seasons Resort Bora Bora" loading="lazy">
+                  <figcaption>Four Seasons Resort Bora Bora</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.fourseasons.com/borabora/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g311415-d887085-Reviews-Four_Seasons_Resort_Bora_Bora-Bora_Bora_Society_Islands.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Four Seasons Bora Bora</div>
-              <span class="price mono">$900–1,800/night</span>
-              <p>Overwater bungalow, alternative.</p>
+              <div class="name">The St. Regis Bora Bora Resort</div>
+              <span class="price mono">$2,100+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>The top-tier name on the island — overwater villas start at 1,550 sq ft with glass floor panels over the lagoon. Genuinely a different price tier from the other two.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/borabora/bora-bora-otemanu.jpg" alt="Mount Otemanu, Bora Bora, representative view" loading="lazy">
+                  <figcaption>Mount Otemanu (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.marriott.com/en-us/hotels/bobxr-the-st-regis-bora-bora-resort/overview/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g311415-d597947-Reviews-The_St_Regis_Bora_Bora_Resort-Bora_Bora_Society_Islands.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="tahiti.html"><span class="lbl">&larr; Previous</span>🌺 Papeete / Moorea</a>
       <a href="cookislands.html"><span class="lbl">Next &rarr;</span>🌴 Rarotonga</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'InterContinental Bora Bora Le Moana', lat: -16.5470, lng: -151.7423, url: 'https://lemoana.intercontinental.com/' },
+        { cat: 'hotel', name: 'Four Seasons Resort Bora Bora', lat: -16.5350, lng: -151.7180, url: 'https://www.fourseasons.com/borabora/' },
+        { cat: 'hotel', name: 'The St. Regis Bora Bora Resort', lat: -16.4886, lng: -151.7423, url: 'https://www.marriott.com/en-us/hotels/bobxr-the-st-regis-bora-bora-resort/overview/' },
+        { cat: 'activity', name: 'Mount Otemanu', lat: -16.4998, lng: -151.7420, url: 'https://en.wikipedia.org/wiki/Mount_Otemanu' },
+        { cat: 'activity', name: 'Shark Boy Bora Bora (shark/ray tour)', lat: -16.5136, lng: -151.7514, url: 'https://www.tripadvisor.com/Attraction_Review-g311415-d3454219-Reviews-Shark_Boy_Bora_Bora-Bora_Bora_Society_Islands.html' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>

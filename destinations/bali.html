@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ubud + Uluwatu — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; DPS &middot; Bali, Indonesia</span>
         <h1>🌋 Ubud + Uluwatu</h1>
-        <p class="vibe-line">The most varied destination on this list — jungle villas, rice terrace views, temple culture, waterfalls, and beach clubs all within a couple hours of each other. Best value-to-experience ratio here by a wide margin.</p>
+        <p class="vibe-line">The most varied destination on this list — jungle villas, rice terrace views, temple culture, waterfalls, and beach clubs all within a couple hours of each other. Best value-to-experience ratio here by a wide margin. 8 days on the ground, about 9–10 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/bali/tegalalang-rice-terrace.jpg" alt="Tegalalang rice terraces, Ubud, Bali" loading="lazy">
+            <figcaption>Tegalalang rice terraces</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/bali/uluwatu-temple-sunset.jpg" alt="Uluwatu Temple at sunset, Bali" loading="lazy">
+            <figcaption>Uluwatu Temple at sunset</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">DPS</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">JUN, SEP</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Very comfortable</div>
+          <div class="dollars" aria-label="2 out of 5 - Budget-Friendly"><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,22 +76,39 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Shoulder: June, September (dry season, less crowded than the July–August peak). Peak: July–August (dry season peak, most crowded and priciest).</p>
+        <p class="season-line"><strong>Shoulder:</strong> June, September (dry season, less crowded than the July–August peak).</p>
+        <p class="season-line"><strong>Peak:</strong> July–August (dry season peak, most crowded and priciest).</p>
+        <p class="wx-note" style="margin-top:8px;">Handy timing: Cathay Pacific's Seattle–Hong Kong seasonal nonstop runs mid-September through late October, lining up neatly with this window.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Very comfortable</div>
-        <p>Likely the best value-per-dollar destination on this list, leaving real room for spa days, private drivers, and excellent dining.</p>
+        <div class="dollars" aria-label="2 out of 5 - Budget-Friendly"><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>A private-pool villa in Ubud (~$300/night) plus 4 nights at Alila Villas Uluwatu (~$900/night) runs lodging to about $4,800; food and activities are genuinely cheap here, adding maybe $1,200 more. Total lands around $6,000 — comfortably the best value on this list, even before considering that going all-in on Four Seasons Sayan + Bulgari (~$2,500/night) would blow well past $7,500 instead.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">1 stop (HKG)</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles (Cathay Pacific, oneworld)</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → HKG → DPS</div>
+          <div class="flight-time">12:25p – 4:45p<sup>+1</sup> / 7:00p – 11:55p</div>
+          <span class="dur">13h 55m (CX853) + 5h 05m (Cathay Pacific) · CX853 runs mid-Sep–late Oct only</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">DPS → HKG → SEA</div>
+          <div class="flight-time">7:00a – 11:15a<sup>+1</sup> / 1:25p – 10:05a</div>
+          <span class="dur">~5h 00m (Cathay Pacific) + 11h 55m (CX852) · same-day SEA arrival in this season</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Ubud (Sept, dry season)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">~82°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">~72°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Ubud (Sept, dry season)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">82°F (28°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">72°F (22°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">76–83%</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">~upper-60s°F (estimated)</span></div><p class="wx-note">This is Bali's most comfortable, driest stretch of the year.</p></div>
-<div class="wx-card"><h4>Seminyak / coast (Sept)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">~81°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">~75°F</span></div><p class="wx-note">Similarly humid but slightly warmer nights than inland Ubud.</p></div></div>
+<div class="wx-card"><h4>Seminyak / coast (Sept)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">81°F (27°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">75°F (24°C)</span></div><p class="wx-note">Similarly humid but slightly warmer nights than inland Ubud.</p></div></div>
 
     <div class="section-title">Itinerary</div>
     <div class="day">
@@ -93,7 +117,18 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Ubud sights</h4><p>Tegalalang rice terraces, Sacred Monkey Forest, waterfall hikes (Tegenungan or Tibumana).</p></div>
+              <div class="content"><h4>Ubud sights</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/tegalalang-rice-terrace.jpg" alt="Tegalalang rice terraces, Ubud" loading="lazy">
+                  <figcaption>Tegalalang rice terraces</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/ubud-monkey-forest.jpg" alt="Sacred Monkey Forest, Ubud" loading="lazy">
+                  <figcaption>Sacred Monkey Forest</figcaption>
+                </figure>
+              </div>
+              <p>Tegalalang rice terraces, Sacred Monkey Forest, waterfall hikes (Tegenungan or Tibumana).</p></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
@@ -109,7 +144,14 @@
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Uluwatu Temple + coast</h4><p>Uluwatu Temple at sunset, surf watching.</p></div>
+              <div class="content"><h4>Uluwatu Temple + coast</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/uluwatu-temple-sunset.jpg" alt="Uluwatu Temple at sunset" loading="lazy">
+                  <figcaption>Uluwatu Temple</figcaption>
+                </figure>
+              </div>
+              <p>Uluwatu Temple at sunset, surf watching.</p></div>
             </div>
 <div class="day">
               <div class="num mono">07</div>
@@ -122,26 +164,142 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Four Seasons Sayan</div>
-              <span class="price mono">$500–900/night</span>
-              <p>Ubud, jungle/river setting.</p>
-            </div>
-<div class="lodge-card">
               <div class="name">Private-pool villa, Ubud</div>
               <span class="price mono">$200–500/night</span>
-              <p>Excellent value even at the luxury tier.</p>
+              <p>Excellent value even at the luxury tier — this is what makes Bali the value pick on this list.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/tegalalang-rice-terrace.jpg" alt="Ubud rice terraces, representative view" loading="lazy">
+                  <figcaption>Ubud (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.booking.com/villas/city/id/ubud.html" target="_blank" rel="noopener">Browse Ubud villas ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Bulgari Bali or Uluwatu clifftop resort</div>
-              <span class="price mono">$500–900/night</span>
-              <p>For the coastal portion.</p>
+              <div class="name">Four Seasons Resort Bali at Sayan</div>
+              <span class="price mono">$850–1,300+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Ubud, jungle/river setting, riverwalk to the Campuhan Ridge.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/ubud-monkey-forest.jpg" alt="Ubud, representative view" loading="lazy">
+                  <figcaption>Ubud (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.fourseasons.com/sayan/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g2209545-d301883-Reviews-Four_Seasons_Resort_Bali_At_Sayan-Sayan_Ubud_Gianyar_Regency_Bali.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
+            </div>
+<div class="lodge-card">
+              <div class="name">Alila Villas Uluwatu</div>
+              <span class="price mono">$800–1,100/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>All-pool-villa clifftop resort, contemporary Balinese design — the coastal splurge.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/bali/uluwatu-temple-sunset.jpg" alt="Uluwatu, representative view" loading="lazy">
+                  <figcaption>Uluwatu (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.alilahotels.com/uluwatu" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g1380108-d1238730-Reviews-Alila_Villas_Uluwatu-Pecatu_Bukit_Peninsula_Bali.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="fiji.html"><span class="lbl">&larr; Previous</span>🇫🇯 Nadi / Mamanuca Islands</a>
       <a href="cabo.html"><span class="lbl">Next &rarr;</span>🌵 Cabo San Lucas</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Private-pool villa, Ubud', lat: -8.4763, lng: 115.2620, url: 'https://www.booking.com/villas/city/id/ubud.html' },
+        { cat: 'hotel', name: 'Four Seasons Resort Bali at Sayan', lat: -8.4763, lng: 115.2530, url: 'https://www.fourseasons.com/sayan/' },
+        { cat: 'hotel', name: 'Alila Villas Uluwatu', lat: -8.8319, lng: 115.1197, url: 'https://www.alilahotels.com/uluwatu' },
+        { cat: 'activity', name: 'Tegalalang Rice Terrace', lat: -8.4312, lng: 115.2777, url: 'https://en.wikipedia.org/wiki/Tegalalang' },
+        { cat: 'activity', name: 'Sacred Monkey Forest', lat: -8.5188, lng: 115.2588, url: 'https://www.monkeyforestubud.com/' },
+        { cat: 'activity', name: 'Tirta Empul Temple', lat: -8.4149, lng: 115.3153, url: 'https://en.wikipedia.org/wiki/Tirta_Empul' },
+        { cat: 'activity', name: 'Uluwatu Temple', lat: -8.8291, lng: 115.0849, url: 'https://en.wikipedia.org/wiki/Pura_Luhur_Uluwatu' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>

@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Puerto Vallarta — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; PVR &middot; Mexico</span>
         <h1>🌊 Puerto Vallarta</h1>
-        <p class="vibe-line">Warmer and more laid-back than Cabo — cobblestone streets, a real old-town feel, jungle backdrop meeting the beach. Less glossy-resort, more authentic-Mexico.</p>
+        <p class="vibe-line">Warmer and more laid-back than Cabo — cobblestone streets, a real old-town feel, jungle backdrop meeting the beach. Less glossy-resort, more authentic-Mexico. 7 days on the ground, about 8 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/puertovallarta/puerto-vallarta-malecon.jpg" alt="The Malecón, Puerto Vallarta" loading="lazy">
+            <figcaption>The Malecón, Puerto Vallarta</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/puertovallarta/puerto-vallarta-skyline.jpg" alt="Puerto Vallarta skyline from the hills" loading="lazy">
+            <figcaption>Puerto Vallarta, old town and bay</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">PVR</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">LATE OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="1 out of 5 - Cheap"><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,18 +76,35 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Same hurricane-season logic as Cabo but on the Pacific mainland side — July–October carries rain/humidity risk, easing by October. Late October is specifically the most pleasant stretch as rainfall tapers off — lean toward the very end of your window here too.</p>
+        <p class="season-line"><strong>Shoulder:</strong> late October specifically — rainfall tapers off and this becomes the most pleasant stretch.</p>
+        <p class="season-line"><strong>Riskier:</strong> July–September, same hurricane-season logic as Cabo but on the Pacific mainland side.</p>
+        <p class="wx-note" style="margin-top:8px;">Lean toward the very end of your window here, same as Cabo.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>Generally a better value than Cabo for a similar experience.</p>
+        <div class="dollars" aria-label="1 out of 5 - Cheap"><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>A week mostly at a boutique Zona Romántica hotel like Zona Z (TripAdvisor's #1 small hotel in PV, ~$150–250/night) with a couple of splurge nights at Four Seasons Punta Mita (~$1,300/night, pricier than it used to be) keeps lodging to about $2,500. Food and activities here are genuinely inexpensive — total lands around $4,000, roughly half the budget. The cheapest destination on this list, precisely because "authentic, not glossy-resort" translates into real savings.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">Nonstop</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → PVR</div>
+          <div class="flight-time">7:30a – 2:15p</div>
+          <span class="dur">4h 44m · Alaska Airlines · daily</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">PVR → SEA</div>
+          <div class="flight-time">3:15p – 6:05p</div>
+          <span class="dur">~4h 50m · Alaska Airlines · daily</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Puerto Vallarta (Oct, tail end of rainy season)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">~84°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">~73°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Puerto Vallarta (Oct, tail end of rainy season)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">84°F (29°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">73°F (23°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">~75%, described as very warm and muggy</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">~upper-70s°F (seasonal average, treat as directional)</span></div><p class="wx-note">Genuinely muggy, more so than Cabo — but late October is called out as an especially pleasant stretch as rainfall tapers off.</p></div></div>
 
@@ -91,15 +115,37 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Old Town + Malecon</h4><p>Cobblestone streets, boardwalk sculptures, sunset dinner overlooking the bay.</p></div>
+              <div class="content"><h4>Old Town + Malecon</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/puertovallarta/puerto-vallarta-malecon.jpg" alt="The Malecón, Puerto Vallarta" loading="lazy">
+                  <figcaption>The Malecón</figcaption>
+                </figure>
+              </div>
+              <p>Cobblestone streets, boardwalk sculptures, sunset dinner overlooking the bay.</p></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Marietas Islands boat trip</h4><p>Snorkeling, the famous “hidden beach.”</p></div>
+              <div class="content"><h4>Marietas Islands boat trip</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/puertovallarta/islas-marietas.jpg" alt="Islas Marietas, Puerto Vallarta" loading="lazy">
+                  <figcaption>Islas Marietas</figcaption>
+                </figure>
+              </div>
+              <p>Snorkeling, the famous "hidden beach."</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/AttractionProductReview-g150793-d19990807-Marietas_Islands_Snorkel_Tour_Hidden_Beach-Puerto_Vallarta.html" target="_blank" rel="noopener">Recommended: Marietas Islands snorkel tour + Hidden Beach ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Sayulita or San Pancho day trip</h4><p>Bohemian surf towns north of PV, a nice change of scene.</p></div>
+              <div class="content"><h4>Sayulita or San Pancho day trip</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/puertovallarta/sayulita.jpg" alt="Sayulita, Nayarit" loading="lazy">
+                  <figcaption>Sayulita</figcaption>
+                </figure>
+              </div>
+              <p>Bohemian surf towns north of PV, a nice change of scene.</p></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
@@ -120,21 +166,126 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Four Seasons Punta Mita</div>
-              <span class="price mono">$400–900/night</span>
-              <p>Just north of PV, splurge.</p>
+              <div class="name">Zona Z Boutique Hotel &amp; Spa</div>
+              <span class="price mono">$150–250/night</span>
+              <span class="stars">★★★ <small>3-star</small></span>
+              <p>Adults-only, TripAdvisor's #1 small hotel in Puerto Vallarta — top 1% of hotels worldwide by their ranking. Central in the Romantic Zone.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/puertovallarta/puerto-vallarta-skyline.jpg" alt="Puerto Vallarta, representative view" loading="lazy">
+                  <figcaption>Puerto Vallarta (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.zonazhotel.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/HotelsList-Puerto_Vallarta-Romantic-Boutique-Hotels-zfp10850357.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Boutique hotel, Romantic Zone</div>
-              <span class="price mono">$150–350/night</span>
-              <p>Central, walkable.</p>
+              <div class="name">Four Seasons Resort Punta Mita</div>
+              <span class="price mono">$1,200–1,450+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Just north of PV — the splurge, pricier than a quick glance suggests.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/puertovallarta/islas-marietas.jpg" alt="Punta Mita coast, representative view" loading="lazy">
+                  <figcaption>Punta Mita area (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.fourseasons.com/puntamita/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g499443-d153285-Reviews-Four_Seasons_Resort_Punta_Mita-Punta_de_Mita_Pacific_Coast.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="cabo.html"><span class="lbl">&larr; Previous</span>🌵 Cabo San Lucas</a>
       <a href="costarica.html"><span class="lbl">Next &rarr;</span>🌿 Liberia / Guanacaste</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Zona Z Boutique Hotel & Spa', lat: 20.5989, lng: -105.2372, url: 'https://www.zonazhotel.com/' },
+        { cat: 'hotel', name: 'Four Seasons Resort Punta Mita', lat: 20.7736, lng: -105.5136, url: 'https://www.fourseasons.com/puntamita/' },
+        { cat: 'activity', name: 'The Malecón', lat: 20.6097, lng: -105.2306, url: 'https://en.wikipedia.org/wiki/Malec%C3%B3n,_Puerto_Vallarta' },
+        { cat: 'activity', name: 'Islas Marietas', lat: 20.7000, lng: -105.5833, url: 'https://www.tripadvisor.com/AttractionProductReview-g150793-d19990807-Marietas_Islands_Snorkel_Tour_Hidden_Beach-Puerto_Vallarta.html' },
+        { cat: 'activity', name: 'Sayulita', lat: 20.8697, lng: -105.4411, url: 'https://en.wikipedia.org/wiki/Sayulita' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
