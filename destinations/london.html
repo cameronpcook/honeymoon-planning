@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>London — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip active" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -36,19 +37,25 @@
         <span class="eyebrow">SEA &rarr; LON &middot; United Kingdom</span>
         <h1>🇬🇧 London</h1>
         <p class="vibe-line">A city honeymoon with a slower pulse than most — theatre, museums, parks, pub dinners, maybe a countryside day trip. Sophisticated rather than romantic-cliché, good if you want culture without heat or crowds.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/london/london-thames.jpg" alt="Big Ben and the Houses of Parliament along the River Thames" loading="lazy">
+            <figcaption>Big Ben &amp; the Thames</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/london/bibury-arlington-row.jpg" alt="Arlington Row cottages in Bibury, the Cotswolds" loading="lazy">
+            <figcaption>Bibury, the Cotswolds</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">LON</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">SEP–EARLY OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="3 out of 5 - Comfortable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,12 +76,28 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Shoulder: September–early October (mild, fewer tourists). Peak: July–August (summer crowds, higher prices).</p>
+        <p class="season-line"><strong>Shoulder:</strong> September–early October (mild, fewer tourists).</p>
+        <p class="season-line"><strong>Peak:</strong> July–August (summer crowds, higher prices).</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>London hotels at this tier plus food and a Cotswolds day trip fit well within budget.</p>
+        <div class="dollars" aria-label="3 out of 5 - Comfortable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>Comfortable at Portobello-tier lodging plus food, theatre, and a Cotswolds day trip; tight-to-over-budget at Savoy/Claridge's-level for multiple nights.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">Nonstop</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → LHR</div>
+          <div class="flight-time">9:45p – 3:05p<sup>+1</sup></div>
+          <span class="dur">9h 20m · AS100</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">LHR → SEA</div>
+          <div class="flight-time">5:00p – 7:25p</div>
+          <span class="dur">~10h 25m · AS101</span>
+        </div>
       </div>
     </div>
 
@@ -91,19 +114,63 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Central London</h4><p>Westminster Abbey, Big Ben/Parliament, a boat ride on the Thames, evening West End show.</p></div>
+              <div class="content"><h4>Central London</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/london/big-ben.jpg" alt="Big Ben and the Elizabeth Tower" loading="lazy">
+                  <figcaption>Big Ben, Westminster</figcaption>
+                </figure>
+              </div>
+              <p>Westminster Abbey, Big Ben/Parliament, a boat ride on the Thames, evening West End show.</p>
+              <a class="learnmore" href="https://tickets.westminster-abbey.org/home/index" target="_blank" rel="noopener">Official tickets: Westminster Abbey ↗</a>
+              <a class="learnmore" href="https://www.cityexperiences.com/london/city-cruises/river-thames-sightseeing/" target="_blank" rel="noopener">Thames river cruise: City Cruises ↗</a>
+              <a class="learnmore" href="https://www.londontheatre.co.uk/" target="_blank" rel="noopener">Official West End tickets ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Museums + markets</h4><p>British Museum or Tate Modern, Borough Market for lunch, Covent Garden in the evening.</p></div>
+              <div class="content"><h4>Museums + markets</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/london/british-museum.jpg" alt="The Great Court of the British Museum" loading="lazy">
+                  <figcaption>British Museum</figcaption>
+                </figure>
+              </div>
+              <p>British Museum or Tate Modern, Borough Market for lunch, Covent Garden in the evening.</p>
+              <a class="learnmore" href="https://www.britishmuseum.org/visit" target="_blank" rel="noopener">Official tickets: British Museum (free) ↗</a>
+              <a class="learnmore" href="https://boroughmarket.org.uk/visit-us/" target="_blank" rel="noopener">Borough Market ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Notting Hill + Kensington</h4><p>Portobello Road Market, Kensington Palace/Hyde Park, proper afternoon tea.</p></div>
+              <div class="content"><h4>Notting Hill + Kensington</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/london/portobello-road.jpg" alt="Portobello Road, Notting Hill" loading="lazy">
+                  <figcaption>Portobello Road</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/london/kensington-palace.jpg" alt="Kensington Palace" loading="lazy">
+                  <figcaption>Kensington Palace</figcaption>
+                </figure>
+              </div>
+              <p>Portobello Road Market, Kensington Palace/Hyde Park, proper afternoon tea.</p>
+              <a class="learnmore" href="https://www.hrp.org.uk/kensington-palace/visit/tickets-and-prices/" target="_blank" rel="noopener">Official tickets: Kensington Palace ↗</a>
+              <a class="learnmore" href="https://www.theritzlondon.com/afternoon-tea/" target="_blank" rel="noopener">Afternoon tea: The Ritz ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
-              <div class="content"><h4>Cotswolds day trip / overnight</h4><p>Rent a car or hire a driver to Bibury, Bourton-on-the-Water, and Castle Combe — stone villages, countryside pubs.</p></div>
+              <div class="content"><h4>Cotswolds day trip / overnight</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/london/bibury-arlington-row.jpg" alt="Arlington Row cottages in Bibury" loading="lazy">
+                  <figcaption>Bibury</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/london/bourton-on-the-water.jpg" alt="Bourton-on-the-Water, the Cotswolds" loading="lazy">
+                  <figcaption>Bourton-on-the-Water</figcaption>
+                </figure>
+              </div>
+              <p>Rent a car or hire a driver to Bibury, Bourton-on-the-Water, and Castle Combe — stone villages, countryside pubs.</p>
+              <a class="learnmore" href="https://evanevanstours.com/tours/day-tours-from-london/cotswolds-tours/" target="_blank" rel="noopener">Recommended tour: Evan Evans ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">06</div>
@@ -120,21 +187,132 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">The Savoy or Claridge&#x27;s</div>
-              <span class="price mono">$700–1,200+/night</span>
-              <p>Iconic, central, full splurge.</p>
+              <div class="lodge-sub">
+                <div class="name">The Savoy</div>
+                <span class="price mono">$700–1,200+/night</span>
+                <span class="stars">★★★★★ <small>5-star</small></span>
+                <p>Iconic Strand address, Thames-side, full splurge.</p>
+                <div class="lodge-links">
+                  <a href="https://www.thesavoylondon.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                  <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d187686-Reviews-The_Savoy-London_England.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+                </div>
+              </div>
+              <div class="lodge-sub">
+                <div class="name">Claridge's</div>
+                <span class="price mono">$700–1,200+/night</span>
+                <span class="stars">★★★★★ <small>5-star</small></span>
+                <p>Mayfair art-deco icon, one of London's most storied hotels.</p>
+                <div class="lodge-links">
+                  <a href="https://www.claridges.co.uk/" target="_blank" rel="noopener">Hotel site ↗</a>
+                  <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d187685-Reviews-Claridge_s-London_England.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+                </div>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Boutique hotel, Notting Hill</div>
+              <div class="name">The Portobello Hotel</div>
               <span class="price mono">$400–700/night</span>
-              <p>Quieter, still very central.</p>
+              <span class="stars">★★★★ <small>4-star</small></span>
+              <p>Eclectic boutique hotel tucked into Notting Hill, quieter but still very central.</p>
+              <div class="lodge-links">
+                <a href="https://www.portobellohotel.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.portobellohotel.com/rooms/" target="_blank" rel="noopener">See real room photos ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d187995-Reviews-Portobello_Hotel-London_England.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="italy.html"><span class="lbl">&larr; Previous</span>🇮🇹 Rome + Amalfi Coast</a>
       <a href="iceland.html"><span class="lbl">Next &rarr;</span>🇮🇸 Reykjavik</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'The Savoy', lat: 51.5101, lng: -0.1200, url: 'https://www.thesavoylondon.com/' },
+        { cat: 'hotel', name: "Claridge's", lat: 51.5115, lng: -0.1479, url: 'https://www.claridges.co.uk/' },
+        { cat: 'hotel', name: 'The Portobello Hotel', lat: 51.5138, lng: -0.1976, url: 'https://www.portobellohotel.com/' },
+        { cat: 'activity', name: 'Westminster Abbey', lat: 51.4993, lng: -0.1273, url: 'https://tickets.westminster-abbey.org/home/index' },
+        { cat: 'activity', name: 'British Museum', lat: 51.5194, lng: -0.1270, url: 'https://www.britishmuseum.org/visit' },
+        { cat: 'activity', name: 'Borough Market', lat: 51.5055, lng: -0.0910, url: 'https://boroughmarket.org.uk/visit-us/' },
+        { cat: 'activity', name: 'Kensington Palace', lat: 51.5058, lng: -0.1875, url: 'https://www.hrp.org.uk/kensington-palace/visit/tickets-and-prices/' },
+        { cat: 'activity', name: 'Portobello Road Market', lat: 51.5158, lng: -0.2049, url: 'https://en.wikipedia.org/wiki/Portobello_Road' },
+        { cat: 'activity', name: 'Bibury, the Cotswolds', lat: 51.7592, lng: -1.8322, url: 'https://evanevanstours.com/tours/day-tours-from-london/cotswolds-tours/' },
+        { cat: 'activity', name: 'Bourton-on-the-Water', lat: 51.8767, lng: -1.7539, url: 'https://evanevanstours.com/tours/day-tours-from-london/cotswolds-tours/' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
