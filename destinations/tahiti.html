@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Papeete / Moorea — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; PPT &middot; Tahiti, French Polynesia</span>
         <h1>🌺 Papeete / Moorea</h1>
-        <p class="vibe-line">The classic honeymoon fantasy — lagoons, overwater bungalows, total quiet. Tahiti/Papeete is mostly a gateway; most of your time will be on Moorea for the postcard experience.</p>
+        <p class="vibe-line">The classic honeymoon fantasy — lagoons, overwater bungalows, total quiet. Tahiti/Papeete is mostly a gateway; most of your time will be on Moorea for the postcard experience. 7 days on the ground, about 8 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/tahiti/moorea-lagoon-bungalows.jpg" alt="Overwater bungalows on the lagoon, Moorea" loading="lazy">
+            <figcaption>Overwater bungalows, Moorea lagoon</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/tahiti/papeete-harbor.jpg" alt="Papeete harbor, Tahiti" loading="lazy">
+            <figcaption>Papeete, Tahiti</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">PPT</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">SEP–OCT</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Tight</div>
+          <div class="dollars" aria-label="4 out of 5 - Tight but doable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,18 +76,35 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Shoulder: September–October (dry season winding down, fewer visitors). Peak: July–August (dry season peak, most crowded/priciest for French Polynesia overall).</p>
+        <p class="season-line"><strong>Shoulder:</strong> September–October (dry season winding down, fewer visitors).</p>
+        <p class="season-line"><strong>Peak:</strong> July–August (dry season peak, most crowded/priciest for French Polynesia overall).</p>
+        <p class="wx-note" style="margin-top:8px;">Air Tahiti Nui ended its Seattle–Papeete nonstop in early 2026 — this now routes through LAX, which flies 7–11x/week, so there's no tight seasonal window tied to the flight itself.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Tight</div>
-        <p>Workable for 6–7 nights overwater; consider splitting nights between overwater and a garden-view room to stretch it.</p>
+        <div class="dollars" aria-label="4 out of 5 - Tight but doable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span></div>
+        <p>Six nights in an overwater bungalow (Hilton or Sofitel, ~$650/night) runs about $3,900 before French Polynesia's ~13% TVA and resort fees, which push it closer to $4,800. Food is genuinely expensive on a resort island, and a couple of excursions add more — the total lands right around $7,500. Tight, but doable if you skip extra add-ons.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">1 stop (LAX)</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles (Air Tahiti Nui codeshare)</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → LAX → PPT</div>
+          <div class="flight-time">11:00a – 1:35p / 4:20p – 10:35p</div>
+          <span class="dur">2h 35m (Alaska) + 8h 15m (TN7, Air Tahiti Nui) · ~2h45m connection</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">PPT → LAX → SEA</div>
+          <div class="flight-time">11:45p – 10:35a<sup>+1</sup> / 1:15p – 3:50p</div>
+          <span class="dur">7h 50m (TN8, Air Tahiti Nui) + 2h 35m (Alaska) · ~2h40m connection</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
     <div class="wx-grid"><div class="wx-card"><h4>Moorea (Sept–Oct)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">85°F (29°C)</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">71°F</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">71°F (22°C)</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">~72°F (max)</span></div>
 <div class="wx-row"><span class="k">Sea temp</span><span class="v mono">~79°F</span></div><p class="wx-note">Genuinely tropical-muggy year-round — shoulder season mainly reduces rain, not humidity.</p></div></div>
 
@@ -91,15 +115,32 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Lagoon day</h4><p>Snorkeling right off your bungalow, lagoon tour.</p></div>
+              <div class="content"><h4>Lagoon day</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/tahiti/moorea-lagoon-aerial.jpg" alt="Aerial view of the Moorea lagoon" loading="lazy">
+                  <figcaption>Moorea lagoon</figcaption>
+                </figure>
+              </div>
+              <p>Snorkeling right off your bungalow, lagoon tour.</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/AttractionProductReview-g309685-d20926809-3_hour_Lagoon_Snorkeling_Tour_Shared_Tour-Moorea_Society_Islands.html" target="_blank" rel="noopener">Recommended: Miti Tours lagoon snorkeling ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Reef excursion</h4><p>Swim with stingrays and reef sharks (shallow, guided, very safe), or a private lagoon picnic.</p></div>
+              <div class="content"><h4>Reef excursion</h4><p>Swim with stingrays and reef sharks (shallow, guided, very safe), or a private lagoon picnic.</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/ShowUserReviews-g1453843-d6731751-r216159554-Moorea_Mahana_Tours-Ha_apiti_Moorea_Society_Islands.html" target="_blank" rel="noopener">Recommended: Moorea Mahana Tours (stingrays + sharks) ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Interior of Moorea</h4><p>Belvedere lookout, pineapple plantation tour, or a 4x4 safari through the mountains.</p></div>
+              <div class="content"><h4>Interior of Moorea</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/tahiti/moorea-belvedere-view.jpg" alt="View over Moorea's interior mountains and bays" loading="lazy">
+                  <figcaption>Moorea's interior, near Belvedere</figcaption>
+                </figure>
+              </div>
+              <p>Belvedere lookout, pineapple plantation tour, or a 4x4 safari through the mountains.</p>
+              <a class="learnmore" href="https://www.pelago.com/en-US/activity/pkbodo90m-moorea-private-4x4-safari-half-day-tour--albert-tours-moorea-papeete/" target="_blank" rel="noopener">Recommended: Albert Tours 4x4 safari ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
@@ -107,7 +148,14 @@
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Second free day / Tahiti</h4><p>Optional day trip to Tahiti for shopping and a nice dinner.</p></div>
+              <div class="content"><h4>Second free day / Tahiti</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/tahiti/papeete-harbor.jpg" alt="Papeete harbor, Tahiti" loading="lazy">
+                  <figcaption>Papeete (optional day trip)</figcaption>
+                </figure>
+              </div>
+              <p>Optional day trip to Tahiti for shopping and a nice dinner.</p></div>
             </div>
 <div class="day">
               <div class="num mono">07</div>
@@ -116,21 +164,126 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Hilton Moorea Lagoon Resort</div>
-              <span class="price mono">$500–900/night</span>
-              <p>Overwater bungalow.</p>
+              <div class="name">Hilton Moorea Lagoon Resort &amp; Spa</div>
+              <span class="price mono">$550–900/night</span>
+              <span class="stars">★★★★ <small>4-star</small></span>
+              <p>Overwater bungalow, only overwater restaurant on Moorea, tour desk arranges the lagoon/stingray excursions directly.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/tahiti/moorea-lagoon-bungalows.jpg" alt="Overwater bungalows on the lagoon, Moorea" loading="lazy">
+                  <figcaption>Overwater bungalows (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.hilton.com/en/hotels/pptmlhh-hilton-moorea-lagoon-resort-and-spa/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g1918344-d301841-Reviews-Hilton_Moorea_Lagoon_Resort_Spa-Papetoai_Moorea_Society_Islands.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Sofitel Moorea</div>
+              <div class="name">Sofitel Kia Ora Moorea Beach Resort</div>
               <span class="price mono">$500–900/night</span>
-              <p>Overwater bungalow, alternative.</p>
+              <span class="stars">★★★★ <small>4-star</small></span>
+              <p>Overwater bungalow alternative, the island's best white-sand beach, 5 minutes from the ferry dock.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/tahiti/moorea-lagoon-aerial.jpg" alt="Aerial view of the Moorea lagoon" loading="lazy">
+                  <figcaption>Moorea lagoon (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://all.accor.com/hotel/0566/index.en.shtml" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g13280428-d307162-Reviews-Sofitel_Kia_Ora_Moorea_Beach_Resort-Te_avaro_Moorea_Society_Islands.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="seoul.html"><span class="lbl">&larr; Previous</span>🇰🇷 Seoul</a>
       <a href="borabora.html"><span class="lbl">Next &rarr;</span>🏝️ Bora Bora</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Hilton Moorea Lagoon Resort & Spa', lat: -17.4922, lng: -149.8823, url: 'https://www.hilton.com/en/hotels/pptmlhh-hilton-moorea-lagoon-resort-and-spa/' },
+        { cat: 'hotel', name: 'Sofitel Kia Ora Moorea Beach Resort', lat: -17.4875, lng: -149.7601, url: 'https://all.accor.com/hotel/0566/index.en.shtml' },
+        { cat: 'activity', name: 'Papeete', lat: -17.5334, lng: -149.5667, url: 'https://tahititourisme.com/' },
+        { cat: 'activity', name: 'Belvedere Lookout', lat: -17.5280, lng: -149.8090, url: 'https://www.pelago.com/en-US/activity/pkbodo90m-moorea-private-4x4-safari-half-day-tour--albert-tours-moorea-papeete/' },
+        { cat: 'activity', name: "Cook's Bay lagoon tours", lat: -17.4931, lng: -149.8156, url: 'https://www.tripadvisor.com/AttractionProductReview-g309685-d20926809-3_hour_Lagoon_Snorkeling_Tour_Shared_Tour-Moorea_Society_Islands.html' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
