@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rome + Amalfi Coast — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
@@ -38,11 +39,11 @@
         <p class="vibe-line">Elegant and unhurried — ruins and long dinners in Rome, cliffside relaxation and boat days on the coast. Classic-romantic, not adrenaline. 8 days on the ground, about 9 door-to-door.</p>
         <div class="hero-photos">
           <figure>
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rome_skyline_panorama.jpg?width=700" alt="Rome skyline with domes and rooftops at dusk" loading="lazy">
+            <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Rome_skyline_panorama.jpg?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Rome_skyline_panorama.jpg?width=1800" alt="Rome skyline with domes and rooftops at dusk" loading="lazy">
             <figcaption>Rome, seen from the rooftops</figcaption>
           </figure>
           <figure>
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano-Amalfi_Coast-Italy.jpg?width=700" alt="Positano cascading down the cliffside to the sea" loading="lazy">
+            <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano-Amalfi_Coast-Italy.jpg?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano-Amalfi_Coast-Italy.jpg?width=1800" alt="Positano cascading down the cliffside to the sea" loading="lazy">
             <figcaption>Positano, Amalfi Coast</figcaption>
           </figure>
         </div>
@@ -106,61 +107,66 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Ancient Rome</h4><p>Colosseum, Roman Forum, Palatine Hill in the morning; Pantheon and Trevi Fountain in the afternoon; long dinner in Trastevere.</p>
+              <div class="content"><h4>Ancient Rome</h4>
               <div class="day-photos">
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum,_Rome.JPG?width=700" alt="The Colosseum in Rome" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum,_Rome.JPG?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum,_Rome.JPG?width=1800" alt="The Colosseum in Rome" loading="lazy">
                   <figcaption>The Colosseum</figcaption>
                 </figure>
               </div>
+              <p>Colosseum, Roman Forum, Palatine Hill in the morning; Pantheon and Trevi Fountain in the afternoon; long dinner in Trastevere.</p>
               <a class="learnmore" href="https://colosseo.it/en/tickets/colosseum-roman-forum-palatine/" target="_blank" rel="noopener">Official tickets: Colosseum + Forum + Palatine ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Vatican + travel day</h4><p>Vatican Museums and St. Peter's Basilica in the morning, then afternoon train to Naples (~1hr) and private transfer or ferry to Positano (~1–1.5hr).</p>
+              <div class="content"><h4>Vatican + travel day</h4>
               <div class="day-photos">
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Peter's_Basilica_facade,_Rome,_Italy.jpg?width=700" alt="St. Peter's Basilica facade and square" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Peter's_Basilica_facade,_Rome,_Italy.jpg?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Peter's_Basilica_facade,_Rome,_Italy.jpg?width=1800" alt="St. Peter's Basilica facade and square" loading="lazy">
                   <figcaption>St. Peter's Basilica</figcaption>
                 </figure>
               </div>
+              <p>Vatican Museums and St. Peter's Basilica in the morning, then afternoon train to Naples (~1hr) and private transfer or ferry to Positano (~1–1.5hr).</p>
               <a class="learnmore" href="https://tickets.museivaticani.va" target="_blank" rel="noopener">Official tickets: Vatican Museums ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Positano</h4><p>Beach day at Spiaggia Grande or a beach club, explore the boutiques and lemon groves.</p>
+              <div class="content"><h4>Positano</h4>
               <div class="day-photos">
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_Fornillo_Beach.jpg?width=700" alt="Fornillo Beach, Positano" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_Fornillo_Beach.jpg?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_Fornillo_Beach.jpg?width=1800" alt="Fornillo Beach, Positano" loading="lazy">
                   <figcaption>Fornillo Beach, Positano</figcaption>
                 </figure>
               </div>
+              <p>Beach day at Spiaggia Grande or a beach club, explore the boutiques and lemon groves.</p>
               <a class="learnmore" href="https://www.arienzobeachclub.com/" target="_blank" rel="noopener">Recommended beach club: Arienzo Beach Club ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
-              <div class="content"><h4>Capri</h4><p>Full-day boat excursion — Blue Grotto, Faraglioni rocks, lunch on the water.</p>
+              <div class="content"><h4>Capri</h4>
               <div class="day-photos">
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CapriFaraglioni.JPG?width=700" alt="The Faraglioni rock formations off Capri" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/CapriFaraglioni.JPG?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/CapriFaraglioni.JPG?width=1800" alt="The Faraglioni rock formations off Capri" loading="lazy">
                   <figcaption>Faraglioni, Capri</figcaption>
                 </figure>
               </div>
+              <p>Full-day boat excursion — Blue Grotto, Faraglioni rocks, lunch on the water.</p>
               <a class="learnmore" href="https://www.capri.com/en/c/capri-whales" target="_blank" rel="noopener">Recommended boat tour: Capri Whales ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Ravello or Path of the Gods</h4><p>Either the scenic hike (moderate difficulty, stunning views) or a mellower day trip to Ravello's cliffside gardens.</p>
+              <div class="content"><h4>Ravello or Path of the Gods</h4>
               <div class="day-photos">
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Il_Sentiero_degli_dei.jpg?width=700" alt="The Path of the Gods trail above the Amalfi Coast" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Il_Sentiero_degli_dei.jpg?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Il_Sentiero_degli_dei.jpg?width=1800" alt="The Path of the Gods trail above the Amalfi Coast" loading="lazy">
                   <figcaption>Path of the Gods</figcaption>
                 </figure>
                 <figure>
-                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ravello_Villa_Rufolo.JPG?width=700" alt="Gardens of Villa Rufolo, Ravello" loading="lazy">
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ravello_Villa_Rufolo.JPG?width=500" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Ravello_Villa_Rufolo.JPG?width=1800" alt="Gardens of Villa Rufolo, Ravello" loading="lazy">
                   <figcaption>Villa Rufolo, Ravello</figcaption>
                 </figure>
               </div>
+              <p>Either the scenic hike (moderate difficulty, stunning views) or a mellower day trip to Ravello's cliffside gardens.</p>
               <a class="learnmore" href="https://www.alltrails.com/lists/sentiero-degli-dei-path-of-the-gods" target="_blank" rel="noopener">Trail info: Path of the Gods ↗</a>
               <a class="learnmore" href="https://www.ravello.com/attractions/villa-rufolo/" target="_blank" rel="noopener">Villa Rufolo, Ravello ↗</a></div>
             </div>
@@ -178,6 +184,12 @@
               <div class="name">Rome — Airbnb in Monti or Trastevere</div>
               <span class="price mono">$150–300/night</span>
               <p>Walkable, central, great food scene either way. Neighborhood pick, not a single property — no star rating applies.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Trastevere_-_piazza_san_Cosimato_00725-8.JPG?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Trastevere_-_piazza_san_Cosimato_00725-8.JPG?width=1800" alt="A piazza in Trastevere, Rome" loading="lazy">
+                  <figcaption>Trastevere (representative)</figcaption>
+                </figure>
+              </div>
               <div class="lodge-links">
                 <a href="https://www.airbnb.com/monti-rome-italy/stays" target="_blank" rel="noopener">Browse Monti stays ↗</a>
                 <a href="https://www.airbnb.com/trastevere-rome-italy/stays" target="_blank" rel="noopener">Browse Trastevere stays ↗</a>
@@ -189,8 +201,19 @@
                 <span class="price mono">$1,300–2,500+/night</span>
                 <span class="stars">★★★★★ <small>5-star</small></span>
                 <p>Iconic, cliffside, Michelin-starred restaurant — the marquee-name option.</p>
+                <div class="lodge-photos">
+                  <figure>
+                    <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/84017_Positano,_Province_of_Salerno,_Italy_-_panoramio.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/84017_Positano,_Province_of_Salerno,_Italy_-_panoramio.jpg?width=1800" alt="Positano cliffside, representative view" loading="lazy">
+                    <figcaption>Positano cliffside (representative)</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/84017_Positano,_Province_of_Salerno,_Italy_-_panoramio_(1).jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/84017_Positano,_Province_of_Salerno,_Italy_-_panoramio_(1).jpg?width=1800" alt="Positano coastline, representative view" loading="lazy">
+                    <figcaption>Positano coastline (representative)</figcaption>
+                  </figure>
+                </div>
                 <div class="lodge-links">
                   <a href="https://sirenuse.it/en/" target="_blank" rel="noopener">Hotel site ↗</a>
+                  <a href="https://sirenuse.it/en/gallery/rooms-suites/" target="_blank" rel="noopener">See real room photos ↗</a>
                   <a href="https://www.tripadvisor.com/Hotel_Review-g194863-d195499-Reviews-Le_Sirenuse_Hotel-Positano_Amalfi_Coast_Province_of_Salerno_Campania.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
                 </div>
               </div>
@@ -199,8 +222,19 @@
                 <span class="price mono">$1,200–2,200+/night</span>
                 <span class="stars">★★★★★ <small>5-star</small></span>
                 <p>Built into the cliff face, private beach elevator, three Michelin keys.</p>
+                <div class="lodge-photos">
+                  <figure>
+                    <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Costa_di_Amalfi_-_Italia.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Costa_di_Amalfi_-_Italia.jpg?width=1800" alt="Amalfi Coast, representative view" loading="lazy">
+                    <figcaption>Amalfi Coast (representative)</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_II.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_II.jpg?width=1800" alt="Positano, representative view" loading="lazy">
+                    <figcaption>Positano (representative)</figcaption>
+                  </figure>
+                </div>
                 <div class="lodge-links">
                   <a href="https://www.ilsanpietro.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                  <a href="https://www.ilsanpietro.com/rooms/prestige-rooms-positano-view/" target="_blank" rel="noopener">See real room photos ↗</a>
                   <a href="https://www.tripadvisor.com/Hotel_Review-g194863-d262163-Reviews-Il_San_Pietro_Di_Positano-Positano_Amalfi_Coast_Province_of_Salerno_Campania.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
                 </div>
               </div>
@@ -210,8 +244,19 @@
               <span class="price mono">$400–700/night</span>
               <span class="stars">★★★★ <small>4-star</small></span>
               <p>Strong pool-view option at a more moderate splurge.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_07.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_07.jpg?width=1800" alt="Positano, representative view" loading="lazy">
+                  <figcaption>Positano (representative)</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_01.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_01.jpg?width=1800" alt="Positano, representative view" loading="lazy">
+                  <figcaption>Positano (representative)</figcaption>
+                </figure>
+              </div>
               <div class="lodge-links">
                 <a href="https://www.hotelposeidonpositano.it/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.hotelposeidonpositano.it/en/rooms-and-suites-positano/premium-room" target="_blank" rel="noopener">See real room photos ↗</a>
                 <a href="https://www.tripadvisor.com/Hotel_Review-g194863-d235936-Reviews-Hotel_Poseidon-Positano_Amalfi_Coast_Province_of_Salerno_Campania.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
               </div>
             </div>
@@ -220,11 +265,29 @@
               <span class="price mono">$900+/night</span>
               <span class="stars">★★★★★ <small>5-star</small></span>
               <p>Quieter, secluded, private beach.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano-Amalfi_Coast-Italy.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano-Amalfi_Coast-Italy.jpg?width=1800" alt="Positano-Amalfi Coast, representative view" loading="lazy">
+                  <figcaption>Amalfi Coast (representative)</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_Fornillo_Beach.jpg?width=400" data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Positano_-_Fornillo_Beach.jpg?width=1800" alt="Fornillo Beach, Positano, representative view" loading="lazy">
+                  <figcaption>Fornillo Beach (representative)</figcaption>
+                </figure>
+              </div>
               <div class="lodge-links">
                 <a href="https://villatreville.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://villatreville.com/accommodations/one-bedroom-suites/" target="_blank" rel="noopener">See real room photos ↗</a>
                 <a href="https://www.tripadvisor.com/Hotel_Review-g194863-d3853410-Reviews-Villa_Tre_Ville-Positano_Amalfi_Coast_Province_of_Salerno_Campania.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
               </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="costarica.html"><span class="lbl">&larr; Previous</span>🌿 Liberia / Guanacaste</a>
@@ -232,5 +295,88 @@
     </div>
   </div>
   <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Rome — Monti', lat: 41.8949, lng: 12.4924, url: 'https://www.airbnb.com/monti-rome-italy/stays' },
+        { cat: 'hotel', name: 'Rome — Trastevere', lat: 41.8898, lng: 12.4694, url: 'https://www.airbnb.com/trastevere-rome-italy/stays' },
+        { cat: 'hotel', name: 'Le Sirenuse', lat: 40.6285, lng: 14.4862, url: 'https://sirenuse.it/en/' },
+        { cat: 'hotel', name: 'Il San Pietro di Positano', lat: 40.6195, lng: 14.5050, url: 'https://www.ilsanpietro.com/' },
+        { cat: 'hotel', name: 'Hotel Poseidon', lat: 40.6275, lng: 14.4825, url: 'https://www.hotelposeidonpositano.it/' },
+        { cat: 'hotel', name: 'Villa Treville', lat: 40.6235, lng: 14.4965, url: 'https://villatreville.com/' },
+        { cat: 'activity', name: 'Colosseum + Roman Forum', lat: 41.8902, lng: 12.4922, url: 'https://colosseo.it/en/tickets/colosseum-roman-forum-palatine/' },
+        { cat: 'activity', name: 'Vatican Museums', lat: 41.9065, lng: 12.4536, url: 'https://tickets.museivaticani.va' },
+        { cat: 'activity', name: 'Arienzo Beach Club', lat: 40.6225, lng: 14.4960, url: 'https://www.arienzobeachclub.com/' },
+        { cat: 'activity', name: 'Capri Whales (boat tour)', lat: 40.5566, lng: 14.2364, url: 'https://www.capri.com/en/c/capri-whales' },
+        { cat: 'activity', name: 'Path of the Gods trailhead', lat: 40.6266, lng: 14.5450, url: 'https://www.alltrails.com/lists/sentiero-degli-dei-path-of-the-gods' },
+        { cat: 'activity', name: 'Villa Rufolo, Ravello', lat: 40.6491, lng: 14.6112, url: 'https://www.ravello.com/attractions/villa-rufolo/' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
