@@ -1,0 +1,45 @@
+name: Fetch destination images
+
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "images/**/manifest.json"
+      - "scripts/fetch_images.py"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch and optimize images from manifests
+        run: python3 scripts/fetch_images.py
+
+      - name: Commit and push any new or changed images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images
+          if git diff --cached --quiet; then
+            echo "No image changes to commit."
+          else
+            git commit -m "Fetch destination images [skip ci]"
+            git push origin HEAD:${{ github.ref }}
+          fi

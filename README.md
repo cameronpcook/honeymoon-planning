@@ -16,3 +16,27 @@ A static site with all 13 destination options, built for GitHub Pages. No build 
 - All destination content lives in `build.py` as plain Python data (not included in this export — ask me to regenerate if you want an edit, or just hand-edit the HTML files directly, they're plain and unminified).
 - `styles.css` controls the whole look — one file, easy to tweak colors/fonts.
 - Each destination page is fully self-contained in `destinations/<slug>.html`.
+
+## Photos
+
+Photos are self-hosted under `images/<destination>/` instead of hotlinked, so
+pages load fast and don't depend on an external site staying up.
+
+Fetching is automatic — no terminal needed. Each destination has an
+`images/<destination>/manifest.json` mapping local filename → source URL
+(currently just `images/italy/manifest.json`). The
+**Fetch destination images** GitHub Action (`.github/workflows/fetch-images.yml`)
+reads every manifest, downloads each image, resizes it to a max of 1600px and
+re-compresses it as an optimized progressive JPEG (`scripts/fetch_images.py`,
+stripping EXIF data too), and commits the result straight to the branch:
+
+- It runs automatically whenever a manifest (or the fetch script) changes and
+  gets pushed.
+- You can also trigger it by hand from the repo's **Actions** tab →
+  **Fetch destination images** → **Run workflow** — this works fine from
+  Safari on an iPad, no terminal required.
+
+Adding photos to a new destination is just adding its
+`images/<slug>/manifest.json` and pointing that page's `<img>` tags at
+`../images/<slug>/<filename>` — the workflow picks up new manifests
+automatically, no workflow changes needed.
