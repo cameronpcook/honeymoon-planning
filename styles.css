@@ -139,6 +139,11 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--brass); outline-of
 
 footer{border-top:1px solid var(--line); padding:30px 0 60px; margin-top:40px;}
 footer p{font-size:0.85rem; color:var(--muted); margin:0;}
+footer .dedication{
+  text-align:center; font-family:'Fraunces', serif; font-size:1.05rem;
+  font-style:italic; color:var(--ink-soft);
+}
+footer .dedication .heart{color:var(--brass-dark); font-style:normal;}
 
 /* ---------- destination page: boarding-pass header ---------- */
 .backlink{
@@ -174,6 +179,22 @@ footer p{font-size:0.85rem; color:var(--muted); margin:0;}
 .pass-stub .field{font-family:'IBM Plex Mono', monospace; font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;}
 .pass-stub .val{font-size:0.85rem; color:var(--ink); margin-top:2px;}
 
+.flight-info{margin-top:8px; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--ink-soft); line-height:1.5;}
+.flight-info .flight-badge{
+  display:inline-block; background:var(--paper); border:1px solid var(--brass); border-radius:999px;
+  padding:2px 8px; font-size:0.66rem; color:var(--brass-dark); margin-right:6px;
+}
+.flight-info .flight-miles{font-size:0.66rem; color:var(--sage);}
+.flight-info .flight-leg{margin-top:6px;}
+.flight-info .flight-leg b{color:var(--ink); font-weight:600;}
+.flight-info .flight-leg .dur{color:var(--muted);}
+
+.dollars{font-family:'IBM Plex Mono', monospace; font-size:1.15rem; letter-spacing:1px;}
+.dollars .filled{color:var(--brass-dark);}
+.dollars .empty{color:var(--line);}
+.dollars-label{display:block; font-family:'Source Serif 4', serif; font-size:0.85rem; letter-spacing:0; color:var(--ink-soft); margin-top:4px;}
+.pass-stub .dollars{font-size:1rem; margin-top:2px;}
+
 @media (max-width:640px){
   .pass{grid-template-columns:1fr;}
   .pass-stub{border-left:none; border-top:2px dashed var(--line); flex-direction:row; flex-wrap:wrap;}
@@ -183,9 +204,12 @@ footer p{font-size:0.85rem; color:var(--muted); margin:0;}
 .tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:40px;}
 @media (max-width:700px){.tiles{grid-template-columns:1fr;}}
 .tile{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px 20px;}
-.tile .field{font-family:'IBM Plex Mono', monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:8px;}
+.tile .field{font-family:'IBM Plex Mono', monospace; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); margin-bottom:8px;}
 .tile .big{font-family:'Fraunces', serif; font-size:1.3rem; font-weight:600;}
 .tile p{font-size:0.87rem; color:var(--ink-soft); margin:6px 0 0;}
+.tile .season-line{font-size:0.87rem; color:var(--ink-soft); margin:0 0 8px;}
+.tile .season-line:last-of-type{margin-bottom:0;}
+.tile .season-line strong{color:var(--ink);}
 
 .bar{display:flex; height:9px; border-radius:5px; overflow:hidden; margin-top:10px; border:1px solid var(--line);}
 .bar span{display:block; height:100%;}
@@ -194,7 +218,7 @@ footer p{font-size:0.85rem; color:var(--muted); margin:0;}
 
 /* ---------- weather table ---------- */
 .section-title{
-  font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.12em;
+  font-family:'IBM Plex Mono', monospace; font-size:1rem; letter-spacing:0.1em;
   text-transform:uppercase; color:var(--brass-dark); margin:44px 0 16px;
   display:flex; align-items:center; gap:12px;
 }

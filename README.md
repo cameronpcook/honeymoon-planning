@@ -16,3 +16,18 @@ A static site with all 13 destination options, built for GitHub Pages. No build 
 - All destination content lives in `build.py` as plain Python data (not included in this export — ask me to regenerate if you want an edit, or just hand-edit the HTML files directly, they're plain and unminified).
 - `styles.css` controls the whole look — one file, easy to tweak colors/fonts.
 - Each destination page is fully self-contained in `destinations/<slug>.html`.
+
+## Photos
+
+Photos are self-hosted under `images/<destination>/` instead of hotlinked, so
+pages load fast and don't depend on an external site staying up. To (re)fetch
+the source images for a destination, run its fetch script from the repo root
+on a machine with normal internet access:
+
+```
+bash scripts/fetch-images-italy.sh
+```
+
+This downloads into `images/italy/`. Commit the resulting files and push.
+Each destination gets its own `scripts/fetch-images-<slug>.sh` as photos are
+added to it.
