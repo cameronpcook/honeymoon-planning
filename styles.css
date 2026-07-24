@@ -210,12 +210,28 @@ footer p{font-size:0.85rem; color:var(--muted); margin:0;}
 .wx-row .v{font-family:'IBM Plex Mono', monospace; font-size:0.87rem;}
 .wx-note{font-size:0.83rem; color:var(--muted); margin-top:10px; font-style:italic;}
 
+/* ---------- header photo strip (whole-trip photos) ---------- */
+.hero-photos{display:flex; gap:10px; margin-top:18px;}
+.hero-photos figure{margin:0; flex:1; min-width:0;}
+.hero-photos img{width:100%; height:150px; object-fit:cover; border-radius:var(--radius); border:1px solid var(--line); display:block;}
+.hero-photos figcaption{font-size:0.72rem; color:var(--muted); font-style:italic; margin-top:5px;}
+@media (max-width:640px){.hero-photos{flex-direction:column;} .hero-photos img{height:180px;}}
+
 /* ---------- itinerary ---------- */
 .day{display:grid; grid-template-columns:56px 1fr; gap:16px; padding:16px 0; border-top:1px solid var(--line);}
 .day:first-of-type{border-top:none;}
 .day .num{font-family:'IBM Plex Mono', monospace; font-size:1.3rem; color:var(--line); font-weight:600; line-height:1.3;}
 .day .content h4{font-family:'Fraunces', serif; font-size:1.05rem; font-weight:600; margin-bottom:4px;}
 .day .content p{margin:0; color:var(--ink-soft); font-size:0.95rem;}
+
+.day-photos{display:flex; gap:10px; margin-top:12px;}
+.day-photos figure{margin:0; flex:1; min-width:0;}
+.day-photos img{width:100%; height:190px; object-fit:cover; border-radius:var(--radius); border:1px solid var(--line); display:block;}
+.day-photos figcaption{font-size:0.72rem; color:var(--muted); font-style:italic; margin-top:5px;}
+@media (max-width:520px){.day-photos{flex-direction:column;} .day-photos img{height:200px;}}
+
+.learnmore{display:inline-block; margin-top:10px; font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--brass-dark); border-bottom:1px dashed var(--brass-dark); margin-right:16px;}
+.learnmore:hover{border-bottom-style:solid; text-decoration:none;}
 
 /* ---------- lodging ---------- */
 .lodge-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
@@ -224,6 +240,12 @@ footer p{font-size:0.85rem; color:var(--muted); margin:0;}
 .lodge-card .name{font-family:'Fraunces', serif; font-weight:600; font-size:1.02rem;}
 .lodge-card .price{font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--brass-dark); margin-top:4px; display:inline-block;}
 .lodge-card p{font-size:0.87rem; color:var(--ink-soft); margin:8px 0 0;}
+
+.lodge-card .stars{color:var(--adventure); font-size:0.82rem; letter-spacing:1px; margin-top:6px; display:block;}
+.lodge-card .stars small{color:var(--muted); letter-spacing:0; font-style:italic; margin-left:4px;}
+.lodge-card .lodge-links{display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:10px; font-family:'IBM Plex Mono', monospace; font-size:0.76rem;}
+
+.lodge-sub + .lodge-sub{margin-top:14px; padding-top:14px; border-top:1px dashed var(--line);}
 
 .budget-note{
   background:var(--paper-alt); border:1px solid var(--line); border-radius:var(--radius);
