@@ -20,14 +20,22 @@ A static site with all 13 destination options, built for GitHub Pages. No build 
 ## Photos
 
 Photos are self-hosted under `images/<destination>/` instead of hotlinked, so
-pages load fast and don't depend on an external site staying up. To (re)fetch
-the source images for a destination, run its fetch script from the repo root
-on a machine with normal internet access:
+pages load fast and don't depend on an external site staying up.
 
-```
-bash scripts/fetch-images-italy.sh
-```
+Fetching is automatic — no terminal needed. Each destination has an
+`images/<destination>/manifest.json` mapping local filename → source URL
+(currently just `images/italy/manifest.json`). The
+**Fetch destination images** GitHub Action (`.github/workflows/fetch-images.yml`)
+reads every manifest, downloads anything missing or changed, and commits the
+result straight to the branch:
 
-This downloads into `images/italy/`. Commit the resulting files and push.
-Each destination gets its own `scripts/fetch-images-<slug>.sh` as photos are
-added to it.
+- It runs automatically whenever a manifest (or the fetch script) changes and
+  gets pushed.
+- You can also trigger it by hand from the repo's **Actions** tab →
+  **Fetch destination images** → **Run workflow** — this works fine from
+  Safari on an iPad, no terminal required.
+
+Adding photos to a new destination is just adding its
+`images/<slug>/manifest.json` and pointing that page's `<img>` tags at
+`../images/<slug>/<filename>` — the workflow picks up new manifests
+automatically, no workflow changes needed.
