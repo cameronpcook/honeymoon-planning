@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reykjavik — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip active" href="iceland.html">KEF</a>
@@ -36,19 +37,25 @@
         <span class="eyebrow">SEA &rarr; KEF &middot; Iceland</span>
         <h1>🇮🇸 Reykjavik</h1>
         <p class="vibe-line">Adventure-forward and dramatic — waterfalls, glaciers, hot springs, black sand beaches. Less “romantic dinner,” more “in awe of the landscape together.” A good pick if you want your honeymoon to feel like an expedition.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/iceland/reykjavik-skyline.jpg" alt="Reykjavik's colorful rooftops seen from Hallgrimskirkja" loading="lazy">
+            <figcaption>Reykjavik, from Hallgrímskirkja</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/iceland/jokulsarlon-header.jpg" alt="Icebergs floating in Jokulsarlon glacier lagoon" loading="lazy">
+            <figcaption>Jökulsárlón glacier lagoon</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">KEF</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">JUL–EARLY SEP</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="3 out of 5 - Comfortable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,12 +76,29 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">Alaska's route is summer-seasonal, so the realistic window is July–early September. July–August is peak (midnight sun, warmest, busiest, priciest). Early September is a soft shoulder — cooler, first shot at northern lights, fewer people.</p>
+        <p class="season-line"><strong>Peak:</strong> July–August (midnight sun, warmest, busiest, priciest).</p>
+        <p class="season-line"><strong>Shoulder:</strong> Early September (cooler, first shot at northern lights, fewer people).</p>
+        <p class="wx-note" style="margin-top:8px;">Alaska's Reykjavik route is summer-seasonal (late May–early September), so the realistic window is July–early September regardless.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>Comfortable, with room for a private glacier or ice cave tour.</p>
+        <div class="dollars" aria-label="3 out of 5 - Comfortable"><span class="filled">$</span><span class="filled">$</span><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>Comfortable, with room for a private glacier or ice cave tour. Iceland's baseline costs run high even at this tier — food and activities add up fast.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">Nonstop</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → KEF</div>
+          <div class="flight-time">6:45p – 9:10a<sup>+1</sup></div>
+          <span class="dur">7h 25m · AS354</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">KEF → SEA</div>
+          <div class="flight-time">12:15p – 1:10p</div>
+          <span class="dur">7h 55m · AS355</span>
+        </div>
       </div>
     </div>
 
@@ -91,27 +115,76 @@
             </div>
 <div class="day">
               <div class="num mono">02</div>
-              <div class="content"><h4>Golden Circle</h4><p>Þingvellir National Park, Geysir geothermal area, Gullfoss waterfall.</p></div>
+              <div class="content"><h4>Golden Circle</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/gullfoss.jpg" alt="Gullfoss waterfall" loading="lazy">
+                  <figcaption>Gullfoss</figcaption>
+                </figure>
+              </div>
+              <p>Þingvellir National Park, Geysir geothermal area, Gullfoss waterfall.</p>
+              <a class="learnmore" href="https://www.re.is/golden-circle-tours/" target="_blank" rel="noopener">Golden Circle tours: Reykjavik Excursions ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>South Coast</h4><p>Seljalandsfoss and Skógafoss waterfalls, black sand beach at Reynisfjara, glacier views.</p></div>
+              <div class="content"><h4>South Coast</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/seljalandsfoss.jpg" alt="Seljalandsfoss waterfall" loading="lazy">
+                  <figcaption>Seljalandsfoss</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/reynisfjara.jpg" alt="Reynisfjara black sand beach" loading="lazy">
+                  <figcaption>Reynisfjara</figcaption>
+                </figure>
+              </div>
+              <p>Seljalandsfoss and Skógafoss waterfalls, black sand beach at Reynisfjara, glacier views.</p></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
-              <div class="content"><h4>Glacier extension</h4><p>Glacier hike or ice cave (seasonal) plus Jökulsárlón glacier lagoon and diamond beach if time allows.</p></div>
+              <div class="content"><h4>Glacier extension</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/jokulsarlon-lagoon.jpg" alt="Jokulsarlon glacier lagoon" loading="lazy">
+                  <figcaption>Jökulsárlón</figcaption>
+                </figure>
+              </div>
+              <p>Glacier hike or ice cave (seasonal) plus Jökulsárlón glacier lagoon and diamond beach if time allows.</p>
+              <a class="learnmore" href="https://adventures.is/iceland/day-tours/ice-caves/" target="_blank" rel="noopener">Glacier hike + ice cave: Arctic Adventures ↗</a>
+              <a class="learnmore" href="https://www.re.is/tour/joekulsarlon-glacial-lagoon/" target="_blank" rel="noopener">Jökulsárlón + Diamond Beach tours ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">05</div>
-              <div class="content"><h4>Blue Lagoon or Sky Lagoon</h4><p>Geothermal soak, spa day, easy pace after days of driving.</p></div>
+              <div class="content"><h4>Blue Lagoon or Sky Lagoon</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/blue-lagoon.jpg" alt="The Blue Lagoon geothermal spa" loading="lazy">
+                  <figcaption>Blue Lagoon</figcaption>
+                </figure>
+              </div>
+              <p>Geothermal soak, spa day, easy pace after days of driving.</p>
+              <a class="learnmore" href="https://www.bluelagoon.com/day-visit" target="_blank" rel="noopener">Official tickets: Blue Lagoon ↗</a>
+              <a class="learnmore" href="https://www.skylagoon.com/en/tickets" target="_blank" rel="noopener">Official tickets: Sky Lagoon ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Snæfellsnes Peninsula or city day</h4><p>Either “Iceland in miniature” scenery, or museums, shopping, and restaurants back in the capital.</p></div>
+              <div class="content"><h4>Snæfellsnes Peninsula or city day</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/kirkjufell.jpg" alt="Kirkjufell mountain, Snaefellsnes Peninsula" loading="lazy">
+                  <figcaption>Kirkjufell, Snæfellsnes</figcaption>
+                </figure>
+                <figure>
+                  <img class="lb-trigger" src="../images/iceland/reykjavik-skyline.jpg" alt="Reykjavik skyline, an alternative city day" loading="lazy">
+                  <figcaption>Reykjavik (city day)</figcaption>
+                </figure>
+              </div>
+              <p>Either “Iceland in miniature” scenery, or museums, shopping, and restaurants back in the capital.</p></div>
             </div>
 <div class="day">
               <div class="num mono">07</div>
-              <div class="content"><h4>Free day, Reykjavik</h4><p>Whale watching, more city time, or a final soak.</p></div>
+              <div class="content"><h4>Free day, Reykjavik</h4><p>Whale watching, more city time, or a final soak.</p>
+              <a class="learnmore" href="https://elding.is/" target="_blank" rel="noopener">Whale watching: Elding ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">08</div>
@@ -120,21 +193,119 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Reykjavik hotel (2–3 nights)</div>
+              <div class="name">Canopy by Hilton Reykjavik City Centre</div>
               <span class="price mono">$250–500/night</span>
-              <p>City base at the start and end.</p>
+              <span class="stars">★★★★ <small>4-star</small></span>
+              <p>City base at the start and end, steps from Laugavegur and Hallgrímskirkja.</p>
+              <div class="lodge-links">
+                <a href="https://www.hilton.com/en/hotels/rekcapy-canopy-reykjavik-city-centre/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g189970-d10303224-Reviews-Canopy_by_Hilton_Reykjavik_City_Centre-Reykjavik_Capital_Region.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
-              <div class="name">Countryside guesthouses / small hotels (2–3 nights)</div>
-              <span class="price mono">$250–500/night</span>
-              <p>Along the south coast route.</p>
+              <div class="name">Hotel Rangá</div>
+              <span class="price mono">$400–700+/night</span>
+              <span class="stars">★★★★ <small>4-star</small></span>
+              <p>Along the south coast route near Hella — famous for its observatory and northern-lights wake-up calls.</p>
+              <div class="lodge-links">
+                <a href="https://hotelranga.is/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g608875-d482449-Reviews-Hotel_Ranga-Hella_South_Region.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="london.html"><span class="lbl">&larr; Previous</span>🇬🇧 London</a>
       <a href="japan.html"><span class="lbl">Next &rarr;</span>🇯🇵 Tokyo + Kyoto</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Canopy by Hilton Reykjavik', lat: 64.1490, lng: -21.9270, url: 'https://www.hilton.com/en/hotels/rekcapy-canopy-reykjavik-city-centre/' },
+        { cat: 'hotel', name: 'Hotel Rangá', lat: 63.8377, lng: -20.1157, url: 'https://hotelranga.is/' },
+        { cat: 'activity', name: 'Þingvellir National Park', lat: 64.2559, lng: -21.1298, url: 'https://www.re.is/golden-circle-tours/' },
+        { cat: 'activity', name: 'Gullfoss', lat: 64.3271, lng: -20.1199, url: 'https://www.re.is/golden-circle-tours/' },
+        { cat: 'activity', name: 'Seljalandsfoss', lat: 63.6156, lng: -19.9886, url: 'https://guidetoiceland.is/travel-iceland/drive/golden-circle' },
+        { cat: 'activity', name: 'Reynisfjara black sand beach', lat: 63.4039, lng: -19.0432, url: 'https://guidetoiceland.is/travel-iceland/drive/golden-circle' },
+        { cat: 'activity', name: 'Jökulsárlón + Diamond Beach', lat: 64.0784, lng: -16.2300, url: 'https://www.re.is/tour/joekulsarlon-glacial-lagoon/' },
+        { cat: 'activity', name: 'Blue Lagoon', lat: 63.8804, lng: -22.4495, url: 'https://www.bluelagoon.com/day-visit' },
+        { cat: 'activity', name: 'Sky Lagoon', lat: 64.0784, lng: -21.9700, url: 'https://www.skylagoon.com/en/tickets' },
+        { cat: 'activity', name: 'Kirkjufell, Snæfellsnes', lat: 64.9407, lng: -23.3070, url: 'https://en.wikipedia.org/wiki/Kirkjufell' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
