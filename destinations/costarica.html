@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Liberia / Guanacaste — Honeymoon Dossier</title>
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <nav class="topnav">
     <div class="topnav-inner">
       <a class="brand" href="../index.html">SEA <span>&rarr;</span> Honeymoon</a>
       <div class="chipstrip">
-      <a class="chip" href="index.html">ALL</a>
+      <a class="chip" href="../index.html">ALL</a>
       <a class="chip" href="italy.html">ROM</a>
       <a class="chip" href="london.html">LON</a>
       <a class="chip" href="iceland.html">KEF</a>
@@ -35,20 +36,26 @@
       <div class="pass-main">
         <span class="eyebrow">SEA &rarr; LIR &middot; Costa Rica</span>
         <h1>🌿 Liberia / Guanacaste</h1>
-        <p class="vibe-line">Rainforest-meets-beach, wildlife-forward — sloths, monkeys, volcano views, zip-lining, all a short drive from your resort. More “nature adventure with beach downtime” than pure relaxation.</p>
+        <p class="vibe-line">Rainforest-meets-beach, wildlife-forward — sloths, monkeys, volcano views, zip-lining, all a short drive from your resort. More "nature adventure with beach downtime" than pure relaxation. 7 days on the ground, about 8 door-to-door.</p>
+        <div class="hero-photos">
+          <figure>
+            <img class="lb-trigger" src="../images/costarica/hermosa-beach-guanacaste.jpg" alt="Playa Hermosa, Guanacaste, Costa Rica" loading="lazy">
+            <figcaption>Playa Hermosa, Guanacaste</figcaption>
+          </figure>
+          <figure>
+            <img class="lb-trigger" src="../images/costarica/sloth-costa-rica.jpg" alt="Two-toed sloth, Costa Rica" loading="lazy">
+            <figcaption>Two-toed sloth</figcaption>
+          </figure>
+        </div>
       </div>
       <div class="pass-stub">
-        <div>
-          <div class="field">Code</div>
-          <div class="code-big">LIR</div>
-        </div>
         <div>
           <div class="field">Window</div>
           <div class="val">JUL BEST OF WINDOW</div>
         </div>
         <div>
           <div class="field">Budget fit</div>
-          <div class="val">Comfortable</div>
+          <div class="dollars" aria-label="1 out of 5 - Cheap"><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
         </div>
       </div>
     </div>
@@ -69,25 +76,42 @@
       </div>
       <div class="tile">
         <div class="field">Season</div>
-        <p style="font-size:0.87rem; color:var(--ink-soft); margin:0;">July–October is Costa Rica's green/rainy season — genuinely the toughest destination on this list to time well. October is actually the wettest month in Guanacaste. If Costa Rica makes the shortlist, lean toward July rather than September/October — some years bring a brief mid-summer dry spell locally called the “veranillo,” though this isn't guaranteed. Mornings tend to be clear with afternoon downpours rather than all-day rain.</p>
+        <p class="season-line"><strong>Best of a tough window:</strong> July, if a brief mid-summer dry spell ("veranillo") shows up — not guaranteed.</p>
+        <p class="season-line"><strong>Avoid:</strong> September–October, the wettest months in Guanacaste.</p>
+        <p class="wx-note" style="margin-top:8px;">July–October is genuinely the toughest window on this list to time well. Mornings tend to be clear with afternoon downpours rather than all-day rain.</p>
       </div>
       <div class="tile">
         <div class="field">Budget for $7,500</div>
-        <div class="big">Comfortable</div>
-        <p>Costa Rica overall runs more affordable than the Pacific/Caribbean resort destinations on this list.</p>
+        <div class="dollars" aria-label="1 out of 5 - Cheap"><span class="filled">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span><span class="empty">$</span></div>
+        <p>A week at a well-reviewed all-inclusive on the Papagayo peninsula (Occidental Papagayo, ~$180/night, meals and drinks bundled) plus excursions comes to around $2,000. Even splitting the stay with a few nights at the Four Seasons (~$1,200+/night) keeps the total around $5,000. Costa Rica genuinely runs cheaper than every resort-island destination on this list.</p>
+      </div>
+      <div class="tile">
+        <div class="field">Flight Info</div>
+        <div class="flight-status"><span class="flight-badge">1 stop (DFW)</span></div>
+        <div class="flight-status"><span class="flight-miles">✓ Bookable with Alaska miles (American, oneworld)</span></div>
+        <div class="flight-leg">
+          <div class="flight-route">SEA → DFW → LIR</div>
+          <div class="flight-time">7:00a – 12:40p / 2:30p – 5:35p</div>
+          <span class="dur">~3h 40m (American) + 3h 05m (American) · Alaska's own SEA–LIR nonstop is winter-only (Dec–May) — it doesn't run during this trip's window at all</span>
+        </div>
+        <div class="flight-leg">
+          <div class="flight-route">LIR → DFW → SEA</div>
+          <div class="flight-time">12:00p – 4:25p / 6:30p – 8:40p</div>
+          <span class="dur">4h 25m (American) + ~4h 10m (American) · American flies DFW–LIR nearly daily year-round</span>
+        </div>
       </div>
     </div>
 
     <div class="section-title">Weather</div>
-    <div class="wx-grid"><div class="wx-card"><h4>Guanacaste (Jul–Oct window)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">~83°F</span></div>
-<div class="wx-row"><span class="k">Low</span><span class="v mono">~76°F</span></div>
+    <div class="wx-grid"><div class="wx-card"><h4>Guanacaste (Jul–Oct window)</h4><div class="wx-row"><span class="k">High</span><span class="v mono">83°F (28°C)</span></div>
+<div class="wx-row"><span class="k">Low</span><span class="v mono">76°F (24°C)</span></div>
 <div class="wx-row"><span class="k">Humidity</span><span class="v mono">~86%</span></div>
 <div class="wx-row"><span class="k">Dew point</span><span class="v mono">~75°F (max)</span></div><p class="wx-note">Very uncomfortable and fairly oppressive away from the beach — this is the wettest, muggiest destination on the list.</p></div></div>
 
     <div class="section-title">Itinerary</div>
     <div class="day">
               <div class="num mono">01</div>
-              <div class="content"><h4>Arrive Liberia</h4><p>Short nonstop flight (~7hrs), transfer to your resort.</p></div>
+              <div class="content"><h4>Arrive Liberia</h4><p>One-stop flight via DFW (~10hrs total), transfer to your resort.</p></div>
             </div>
 <div class="day">
               <div class="num mono">02</div>
@@ -95,7 +119,15 @@
             </div>
 <div class="day">
               <div class="num mono">03</div>
-              <div class="content"><h4>Rincón de la Vieja National Park</h4><p>Waterfalls, hot springs, volcanic mud baths.</p></div>
+              <div class="content"><h4>Rincón de la Vieja National Park</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/costarica/rincon-de-la-vieja-waterfall.jpg" alt="Waterfall in Rincón de la Vieja National Park" loading="lazy">
+                  <figcaption>Rincón de la Vieja waterfall</figcaption>
+                </figure>
+              </div>
+              <p>Waterfalls, hot springs, volcanic mud baths.</p>
+              <a class="learnmore" href="https://www.tripadvisor.com/AttractionProductReview-g309253-d11486199-Penjamo_River_Hot_Springs_and_Mud_Bath_Adventure_by_Rincon_de_la_Vieja_from_Tamari.html" target="_blank" rel="noopener">Recommended: Rincón de la Vieja hot springs + mud bath tour ↗</a></div>
             </div>
 <div class="day">
               <div class="num mono">04</div>
@@ -107,7 +139,14 @@
             </div>
 <div class="day">
               <div class="num mono">06</div>
-              <div class="content"><h4>Wildlife tour</h4><p>Sloths, monkeys, guided nature walk.</p></div>
+              <div class="content"><h4>Wildlife tour</h4>
+              <div class="day-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/costarica/sloth-costa-rica.jpg" alt="Two-toed sloth, Costa Rica" loading="lazy">
+                  <figcaption>Sloth spotting</figcaption>
+                </figure>
+              </div>
+              <p>Sloths, monkeys, guided nature walk.</p></div>
             </div>
 <div class="day">
               <div class="num mono">07</div>
@@ -120,21 +159,133 @@
 
     <div class="section-title">Lodging</div>
     <div class="lodge-grid"><div class="lodge-card">
-              <div class="name">Four Seasons Costa Rica at Peninsula Papagayo</div>
-              <span class="price mono">$600–1,200/night</span>
-              <p>Splurge, on the peninsula.</p>
+              <div class="name">Occidental Papagayo — Adults Only</div>
+              <span class="price mono">$175–250/night</span>
+              <span class="stars">★★★★ <small>4-star, all-inclusive</small></span>
+              <p>On the Papagayo peninsula, meals and drinks bundled in — the value pick that makes this destination the cheapest on the list.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/costarica/hermosa-beach-guanacaste.jpg" alt="Guanacaste coast, representative view" loading="lazy">
+                  <figcaption>Guanacaste coast (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.barcelo.com/en-us/occidental-papagayo/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.booking.com/hotel/cr/occidental-papagayo.html" target="_blank" rel="noopener">Reviews (Booking.com) ↗</a>
+              </div>
+            </div>
+<div class="lodge-card">
+              <div class="name">Four Seasons Resort Costa Rica at Peninsula Papagayo</div>
+              <span class="price mono">$950–1,575+/night</span>
+              <span class="stars">★★★★★ <small>5-star</small></span>
+              <p>Same peninsula, the splurge — pricier than the original estimate suggested.</p>
+              <div class="lodge-photos">
+                <figure>
+                  <img class="lb-trigger" src="../images/costarica/hermosa-beach-guanacaste.jpg" alt="Guanacaste coast, representative view" loading="lazy">
+                  <figcaption>Guanacaste coast (representative)</figcaption>
+                </figure>
+              </div>
+              <div class="lodge-links">
+                <a href="https://www.fourseasons.com/costarica/" target="_blank" rel="noopener">Hotel site ↗</a>
+                <a href="https://www.tripadvisor.com/Hotel_Review-g309253-d211387-Reviews-Four_Seasons_Resort_Costa_Rica_at_Peninsula_Papagayo-Culebra_Province_of_Guanacaste.html" target="_blank" rel="noopener">Reviews (TripAdvisor) ↗</a>
+              </div>
             </div>
 <div class="lodge-card">
               <div class="name">Nayara Tented Camp</div>
               <span class="price mono">$600–1,200/night</span>
-              <p>Near Arenal, if open to a two-region trip.</p>
+              <p>Near Arenal, a different region — only if you're open to a two-region trip instead of staying put in Guanacaste.</p>
+              <div class="lodge-links">
+                <a href="https://www.nayaratentedcamp.com/" target="_blank" rel="noopener">Hotel site ↗</a>
+              </div>
             </div></div>
+
+    <div class="section-title">Map</div>
+    <div class="map-legend">
+      <span><i class="dot" style="background:#3B6FA0;"></i>Hotels</span>
+      <span><i class="dot" style="background:#C0392B;"></i>Activities</span>
+    </div>
+    <div id="trip-map" class="trip-map"></div>
 
     <div class="pagenav">
       <a href="puertovallarta.html"><span class="lbl">&larr; Previous</span>🌊 Puerto Vallarta</a>
       <a href="italy.html"><span class="lbl">Next &rarr;</span>🇮🇹 Rome + Amalfi Coast</a>
     </div>
   </div>
-  <footer><div class="wrap"><p>Built for a July–October 2027 honeymoon, departing SEA on Alaska miles. Weather figures are seasonal averages, not forecasts — worth a quick check closer to booking.</p></div></footer>
+  <footer><div class="wrap"><p class="dedication">Made with <span class="heart">♥</span> for Susan, by Cameron</p></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function(){
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+      function openLb(img){
+        lbImg.src = img.getAttribute('data-full') || img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      function closeLb(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+      document.querySelectorAll('.lb-trigger').forEach(function(img){
+        img.addEventListener('click', function(){ openLb(img); });
+      });
+      lb.addEventListener('click', closeLb);
+      lb.querySelector('.lightbox-close').addEventListener('click', function(e){
+        e.stopPropagation();
+        closeLb();
+      });
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLb();
+      });
+    })();
+
+    (function(){
+      var mapEl = document.getElementById('trip-map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      var HOTEL = '#3B6FA0';
+      var ACTIVITY = '#C0392B';
+
+      function pinIcon(color){
+        return L.divIcon({
+          className: '',
+          html: '<span class="pin" style="background:' + color + ';"></span>',
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+          popupAnchor: [0, -8]
+        });
+      }
+
+      var markers = [
+        { cat: 'hotel', name: 'Occidental Papagayo', lat: 10.6400, lng: -85.6800, url: 'https://www.barcelo.com/en-us/occidental-papagayo/' },
+        { cat: 'hotel', name: 'Four Seasons Resort Costa Rica at Peninsula Papagayo', lat: 10.6270, lng: -85.7000, url: 'https://www.fourseasons.com/costarica/' },
+        { cat: 'activity', name: 'Rincón de la Vieja National Park', lat: 10.7650, lng: -85.3350, url: 'https://www.tripadvisor.com/AttractionProductReview-g309253-d11486199-Penjamo_River_Hot_Springs_and_Mud_Bath_Adventure_by_Rincon_de_la_Vieja_from_Tamari.html' },
+        { cat: 'activity', name: 'Playa Hermosa', lat: 10.5500, lng: -85.6900, url: 'https://en.wikipedia.org/wiki/Gulf_of_Papagayo' }
+      ];
+
+      var map = L.map(mapEl, { scrollWheelZoom: false });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      markers.forEach(function(m){
+        L.marker([m.lat, m.lng], { icon: pinIcon(m.cat === 'hotel' ? HOTEL : ACTIVITY) })
+          .addTo(map)
+          .bindPopup('<strong>' + m.name + '</strong><br><a href="' + m.url + '" target="_blank" rel="noopener">Open ↗</a>');
+      });
+
+      var bounds = L.latLngBounds(markers.map(function(m){ return [m.lat, m.lng]; }));
+      map.fitBounds(bounds.pad(0.2));
+    })();
+  </script>
 </body>
 </html>
