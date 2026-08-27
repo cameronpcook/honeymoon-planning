@@ -30,6 +30,8 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Fetch and optimize images from manifests
+        id: fetch
+        continue-on-error: true
         run: python3 scripts/fetch_images.py
 
       - name: Commit and push any new or changed images
@@ -43,3 +45,7 @@ jobs:
             git commit -m "Fetch destination images [skip ci]"
             git push origin HEAD:${{ github.ref }}
           fi
+
+      - name: Fail the run if any image failed, after committing the rest
+        if: steps.fetch.outcome == 'failure'
+        run: exit 1
