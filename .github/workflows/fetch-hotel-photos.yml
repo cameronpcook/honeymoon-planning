@@ -17,7 +17,7 @@ jobs:
         working-directory: scripts/hotel-photos
         run: |
           chmod +x fetch_photos.sh
-          ./fetch_photos.sh ../../hotel-photos
+          ./fetch_photos.sh ../../images
 
       - name: Commit downloaded photos
         run: |
